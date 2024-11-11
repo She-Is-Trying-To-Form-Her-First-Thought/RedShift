@@ -46,7 +46,7 @@
 		),
 	)
 
-/obj/item/organ/internal/cyberimp/arm/razorwire
+/obj/item/organ/cyberimp/arm/razorwire
 	name = "razorwire spool implant"
 	desc = "An integrated spool of razorwire, capable of being used as a weapon when whipped at your foes. \
 		Built into the back of your hand, try your best to not get it tangled."
@@ -56,7 +56,7 @@
 
 /obj/item/autosurgeon/syndicate/razorwire
 	name = "razorwire autosurgeon"
-	starting_organ = /obj/item/organ/internal/cyberimp/arm/razorwire
+	starting_organ = /obj/item/organ/cyberimp/arm/razorwire
 
 // Shell launch system, an arm mounted single-shot shotgun/.980 grenade launcher that comes out of your arm
 
@@ -96,7 +96,7 @@
 	max_ammo = 1
 	multiload = FALSE
 
-/obj/item/organ/internal/cyberimp/arm/shell_launcher
+/obj/item/organ/cyberimp/arm/shell_launcher
 	name = "shell launch system implant"
 	desc = "A mounted, single-shot housing for a shell launch cannon; capable of firing either twelve gauge shotgun shells, or .980 Tydhouer grenades."
 	items_to_create = list(/obj/item/gun/ballistic/shotgun/shell_launcher)
@@ -105,4 +105,4 @@
 
 /obj/item/autosurgeon/syndicate/shell_launcher
 	name = "shell launcher autosurgeon"
-	starting_organ = /obj/item/organ/internal/cyberimp/arm/shell_launcher
+	starting_organ = /obj/item/organ/cyberimp/arm/shell_launcher

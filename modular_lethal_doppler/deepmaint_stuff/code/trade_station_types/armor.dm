@@ -78,7 +78,7 @@
 	recipe_name = "type II 'Koranda' vest"
 	recipe_requirements = list(
 		/obj/item/epic_loot/aramid = 1,
-		/obj/item/organ/internal/appendix = 1,
+		/obj/item/organ/appendix = 1,
 	)
 	resulting_item = /obj/item/clothing/suit/armor/lethal_koranda
 

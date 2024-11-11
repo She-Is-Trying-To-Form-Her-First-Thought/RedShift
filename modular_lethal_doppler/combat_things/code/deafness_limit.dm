@@ -11,7 +11,7 @@
 
 /datum/component/limit_deafness/proc/deaf_check(mob/living/whatdidyousay)
 	var/mob/living/carbon/human/speakup = whatdidyousay
-	var/obj/item/organ/internal/ears/target_ears = speakup?.get_organ_slot(ORGAN_SLOT_EARS)
+	var/obj/item/organ/ears/target_ears = speakup?.get_organ_slot(ORGAN_SLOT_EARS)
 
 	if (target_ears)
 		if (target_ears.deaf > max_deafness_ticks)

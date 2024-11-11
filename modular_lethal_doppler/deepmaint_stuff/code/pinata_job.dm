@@ -84,14 +84,14 @@
 	squaddie.mind?.adjust_experience(/datum/skill/athletics, 10000000)
 
 	var/list/implants_to_add = list(
-		/obj/item/organ/internal/ears/cybernetic/whisper,
-		/obj/item/organ/internal/cyberimp/chest/nutriment/plus,
-		/obj/item/organ/internal/cyberimp/chest/reviver,
-		/obj/item/organ/internal/cyberimp/brain/anti_drop,
-		/obj/item/organ/internal/cyberimp/sensory_enhancer,
-		/obj/item/organ/internal/cyberimp/mouth/breathing_tube,
-		/obj/item/organ/internal/eyes/robotic/shield,
-		/obj/item/organ/internal/cyberimp/chest/spine,
+		/obj/item/organ/ears/cybernetic/whisper,
+		/obj/item/organ/cyberimp/chest/nutriment/plus,
+		/obj/item/organ/cyberimp/chest/reviver,
+		/obj/item/organ/cyberimp/brain/anti_drop,
+		/obj/item/organ/cyberimp/sensory_enhancer,
+		/obj/item/organ/cyberimp/mouth/breathing_tube,
+		/obj/item/organ/eyes/robotic/shield,
+		/obj/item/organ/cyberimp/chest/spine,
 	)
 	for(var/iterated_implant in implants_to_add)
 		var/obj/item/organ/new_implant = new iterated_implant()

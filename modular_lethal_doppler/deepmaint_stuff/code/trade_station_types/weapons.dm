@@ -226,27 +226,27 @@
 /datum/crafting_bench_recipe_real/chokyu
 	recipe_name = "chokyu sniper rifle"
 	recipe_requirements = list(
-		/obj/item/organ/internal/eyes = 1,
+		/obj/item/organ/eyes = 1,
 	)
 	resulting_item = /obj/item/gun/ballistic/rifle/chokyu
 
 /datum/crafting_bench_recipe_real/super_shotgun
 	recipe_name = "ramu 6ga shotgun"
 	recipe_requirements = list(
-		/obj/item/organ/internal/stomach = 1,
+		/obj/item/organ/stomach = 1,
 	)
 	resulting_item = /obj/item/gun/ballistic/shotgun/ramu
 
 /datum/crafting_bench_recipe_real/suppressed_rifle
 	recipe_name = "yari suppressed rifle"
 	recipe_requirements = list(
-		/obj/item/organ/internal/lungs = 1,
+		/obj/item/organ/lungs = 1,
 	)
 	resulting_item = /obj/item/gun/ballistic/automatic/suppressed_rifle
 
 /datum/crafting_bench_recipe_real/auto_shotgun
 	recipe_name = "nomi repeating shotgun"
 	recipe_requirements = list(
-		/obj/item/organ/internal/liver = 2,
+		/obj/item/organ/liver = 2,
 	)
 	resulting_item = /obj/item/gun/ballistic/automatic/nomi_shotgun

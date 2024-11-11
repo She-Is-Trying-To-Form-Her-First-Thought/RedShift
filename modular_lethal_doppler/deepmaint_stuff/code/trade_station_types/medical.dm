@@ -121,7 +121,7 @@
 /datum/crafting_bench_recipe_real/cms
 	recipe_name = "combat surgeon kit"
 	recipe_requirements = list(
-		/obj/item/organ/internal/eyes = 1,
+		/obj/item/organ/eyes = 1,
 	)
 	resulting_item = /obj/item/storage/medkit/combat_surgeon/stocked
 

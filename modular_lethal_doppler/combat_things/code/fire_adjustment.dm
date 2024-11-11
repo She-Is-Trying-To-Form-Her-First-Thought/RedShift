@@ -1,8 +1,3 @@
-// LETHALSTATION FIRE ADJUSTMENTS
-// Before: -0.05 fire stacks per tick, always
-// After: -0.35 fire stacks per tick (7x increase), but only if below 10 stacks, otherwise no reduction at all.
-// The intent here is to keep incendiaries as a viable weapon type but make being clipped by a single shot or flame grenade not be a world-ending experience.
-
 /mob/living
 	fire_stack_decay_rate = -0.35
 

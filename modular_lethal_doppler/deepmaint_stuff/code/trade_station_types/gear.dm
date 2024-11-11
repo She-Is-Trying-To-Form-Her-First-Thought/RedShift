@@ -91,14 +91,14 @@
 /datum/crafting_bench_recipe_real/grenade_belt
 	recipe_name = "grenade belt"
 	recipe_requirements = list(
-		/obj/item/organ/internal/tongue = 1,
+		/obj/item/organ/tongue = 1,
 	)
 	resulting_item = /obj/item/storage/belt/grenade
 
 /datum/crafting_bench_recipe_real/chest_rig
 	recipe_name = "chest rig"
 	recipe_requirements = list(
-		/obj/item/organ/internal/ears = 1,
+		/obj/item/organ/ears = 1,
 	)
 	resulting_item = /obj/item/storage/belt/military
 
@@ -141,7 +141,7 @@
 /datum/crafting_bench_recipe_real/ballistic_shield
 	recipe_name = "ballistic shield"
 	recipe_requirements = list(
-		/obj/item/organ/internal/lungs = 1,
+		/obj/item/organ/lungs = 1,
 	)
 	resulting_item = /obj/item/shield/ballistic
 

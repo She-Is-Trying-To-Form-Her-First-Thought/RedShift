@@ -5,7 +5,7 @@
 
 // An implant that injects you with twitch on demand, acting like a bootleg sandevistan
 
-/obj/item/organ/internal/cyberimp/sensory_enhancer
+/obj/item/organ/cyberimp/sensory_enhancer
 	name = "\improper Qani-Laaca sensory computer"
 	desc = "An experimental implant replacing the spine of organics. When activated, it can give a temporary boost to mental processing speed, \
 		Which many users percieve as a slowing of time and quickening of their ability to act. Due to its nature, it is incompatible with \
@@ -24,7 +24,7 @@
 	/// The bodypart overlay datum we should apply to whatever mob we are put into
 	var/datum/bodypart_overlay/simple/sensory_enhancer/da_bodypart_overlay
 
-/obj/item/organ/internal/cyberimp/sensory_enhancer/proc/vomit_blood()
+/obj/item/organ/cyberimp/sensory_enhancer/proc/vomit_blood()
 	owner.spray_blood(owner.dir, 2)
 	owner.emote("cough")
 	owner.visible_message(
@@ -32,13 +32,13 @@
 		span_danger("You feel your chest seize up, a worrying amount of blood flying out of your mouth as you cough uncontrollably.")
 	)
 
-/obj/item/organ/internal/cyberimp/sensory_enhancer/on_bodypart_insert(obj/item/bodypart/limb, movement_flags)
+/obj/item/organ/cyberimp/sensory_enhancer/on_bodypart_insert(obj/item/bodypart/limb, movement_flags)
 	da_bodypart_overlay = new()
 	limb.add_bodypart_overlay(da_bodypart_overlay)
 	owner.update_body_parts()
 	return ..()
 
-/obj/item/organ/internal/cyberimp/sensory_enhancer/on_bodypart_remove(obj/item/bodypart/limb, movement_flags)
+/obj/item/organ/cyberimp/sensory_enhancer/on_bodypart_remove(obj/item/bodypart/limb, movement_flags)
 	limb.remove_bodypart_overlay(da_bodypart_overlay)
 	QDEL_NULL(da_bodypart_overlay)
 	owner.update_body_parts()
@@ -46,7 +46,7 @@
 
 /obj/item/autosurgeon/syndicate/sandy
 	name = "\improper Qani-Laaca sensory computer autosurgeon"
-	starting_organ = /obj/item/organ/internal/cyberimp/sensory_enhancer
+	starting_organ = /obj/item/organ/cyberimp/sensory_enhancer
 
 /datum/bodypart_overlay/simple/sensory_enhancer
 	icon = 'modular_lethal_doppler/cool_implants/icons/implants_onmob.dmi'
@@ -104,7 +104,7 @@
 	button_icon_state = "sandy_overcharge"
 	injection_amount = 20
 
-/obj/item/organ/internal/cyberimp/sensory_enhancer/emp_act(severity)
+/obj/item/organ/cyberimp/sensory_enhancer/emp_act(severity)
 	. = ..()
 	if(!owner || . & EMP_PROTECT_SELF)
 		return
@@ -120,7 +120,7 @@
 
 // Hackerman deck, lets you emag or doorjack things (NO CYBORGS) within a short range of yourself
 
-/obj/item/organ/internal/cyberimp/hackerman_deck
+/obj/item/organ/cyberimp/hackerman_deck
 	name = "\improper Binyat wireless hacking system"
 	desc = "A rare-to-find neural chip that allows its user to interface with nearby machinery \
 		and effect it in (usually) beneficial ways. Due to the rudimentary connection, fine manipulation \
@@ -137,13 +137,13 @@
 	/// The bodypart overlay datum we should apply to whatever mob we are put into
 	var/datum/bodypart_overlay/simple/hackerman/da_bodypart_overlay
 
-/obj/item/organ/internal/cyberimp/hackerman_deck/on_bodypart_insert(obj/item/bodypart/limb, movement_flags)
+/obj/item/organ/cyberimp/hackerman_deck/on_bodypart_insert(obj/item/bodypart/limb, movement_flags)
 	da_bodypart_overlay = new()
 	limb.add_bodypart_overlay(da_bodypart_overlay)
 	owner.update_body_parts()
 	return ..()
 
-/obj/item/organ/internal/cyberimp/hackerman_deck/on_bodypart_remove(obj/item/bodypart/limb, movement_flags)
+/obj/item/organ/cyberimp/hackerman_deck/on_bodypart_remove(obj/item/bodypart/limb, movement_flags)
 	limb.remove_bodypart_overlay(da_bodypart_overlay)
 	QDEL_NULL(da_bodypart_overlay)
 	owner.update_body_parts()
@@ -224,7 +224,7 @@
 
 	human_owner.adjust_bodytemperature(HACKERMAN_DECK_TEMPERATURE_INCREASE)
 
-/obj/item/organ/internal/cyberimp/hackerman_deck/emp_act(severity)
+/obj/item/organ/cyberimp/hackerman_deck/emp_act(severity)
 	. = ..()
 	if(!owner || . & EMP_PROTECT_SELF)
 		return
