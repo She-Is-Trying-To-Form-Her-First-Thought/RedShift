@@ -14,6 +14,8 @@
 #define SEE_THROUGH_MAP_SHIPPING_CONTAINER "shipping_container"
 ///Seethrough component for the ratvar wreck, in shape of the ratvar wreck
 #define SEE_THROUGH_MAP_RATVAR_WRECK "ratvar"
+///Seethrough for tall walls
+#define SEE_THROUGH_MAP_TALL_WALLS "tall_walls"
 
 
 /**global statics for the see_through_component coordinate maps
@@ -76,6 +78,13 @@ GLOBAL_LIST_INIT(see_through_maps, list(
 		list(0, 2, 0), list(1, 2, 0), list(2, 2, 0), list(3, 2, 0), list(4, 2, 0), list(5, 2, 0), list(6, 2, 0), list(7, 2, 0), list(8, 2, 0), list(9, 2, 0), list(10, 2, 0), list(11, 2, 0), list(12, 2, 0),
 		list(0, 1, 0), list(1, 1, 0), list(2, 1, 0), list(3, 1, 0), list(4, 1, 0), list(5, 1, 0), list(6, 1, 0), list(7, 1, 0), list(8, 1, 0), list(9, 1, 0), list(10, 1, 0), list(11, 1, 0), list(12, 1, 0),
 		list(0, 0, 0), list(1, 0, 0), list(2, 0, 0), list(3, 0, 0), list(4, 0, 0), list(5, 0, 0), list(6, 0, 0), list(7, 0, 0), list(8, 0, 0), list(9, 0, 0), list(10, 0, 0), list(11, 0, 0), list(12, 0, 0), list(13, 0, 0)
+	),
+	SEE_THROUGH_MAP_TALL_WALLS = list(
+		list(-2, 5, 0), list(-1, 5, 0), list(0, 5, 0), list(1, 5, 0), list(2, 5, 0),
+		list(-2, 4, 0), list(-1, 4, 0), list(0, 4, 0), list(1, 4, 0), list(2, 4, 0),
+		list(-2, 3, 0), list(-1, 3, 0), list(0, 3, 0), list(1, 3, 0), list(2, 3, 0),
+		list(-2, 2, 0), list(-1, 2, 0), list(0, 2, 0), list(1, 2, 0), list(2, 2, 0),
+		list(-2, 1, 0), list(-1, 1, 0), list(0, 1, 0), list(1, 1, 0), list(2, 1, 0)
 	)
 ))
 

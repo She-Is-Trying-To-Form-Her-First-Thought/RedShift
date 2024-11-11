@@ -11,4 +11,4 @@
 
 ///Return a see_through_map, examples in seethrough.dm
 /turf/closed/proc/get_seethrough_map()
-	return SEE_THROUGH_MAP_THREE_X_THREE
+	return SEE_THROUGH_MAP_TALL_WALLS
