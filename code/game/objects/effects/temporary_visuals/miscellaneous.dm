@@ -1,44 +1,70 @@
 //unsorted miscellaneous temporary visuals
 /obj/effect/temp_visual/dir_setting/bloodsplatter
 	icon = 'icons/effects/blood.dmi'
-	duration = 5
+	duration = 0.5 SECONDS // DOPPLETHAL EDIT - ORIGINAL - duration = 5
 	randomdir = FALSE
-	layer = BELOW_MOB_LAYER
-	plane = GAME_PLANE
+	layer = ABOVE_MOB_LAYER // DOPPLETHAL EDIT - ORIGINAL - layer = BELOW_MOB_LAYER
+	alpha = 175 // DOPPLETHAL EDIT - ORIGINAL - plane = GAME_PLANE
 	var/splatter_type = "splatter"
 
-/obj/effect/temp_visual/dir_setting/bloodsplatter/Initialize(mapload, set_dir)
-	if(ISDIAGONALDIR(set_dir))
-		icon_state = "[splatter_type][pick(1, 2, 6)]"
-	else
-		icon_state = "[splatter_type][pick(3, 4, 5)]"
+/obj/effect/temp_visual/dir_setting/bloodsplatter/Initialize(mapload, angle) // DOPPLETHAL EDIT - ORIGINAL - /obj/effect/temp_visual/dir_setting/bloodsplatter/Initialize(mapload, set_dir)
+	var/x_component = sin(angle) * -15 // DOPPLETHAL EDIT - ORIGINAL - if(ISDIAGONALDIR(set_dir))
+	var/y_component = cos(angle) * -15 // DOPPLETHAL EDIT - ORIGINAL - icon_state = "[splatter_type][pick(1, 2, 6)]"
+	particles = new /particles/splatter // DOPPLETHAL EDIT - ORIGINAL - else
+	particles.velocity = list(x_component, y_component) // DOPPLETHAL EDIT - ORIGINAL - icon_state = "[splatter_type][pick(3, 4, 5)]"
 	. = ..()
+	icon_state = "[splatter_type][pick(1, 2, 3, 4, 5, 6)]" // DOPPLETHAL ADDITION
 	var/target_pixel_x = 0
 	var/target_pixel_y = 0
-	switch(set_dir)
-		if(NORTH)
-			target_pixel_y = 16
-		if(SOUTH)
-			target_pixel_y = -16
-			layer = ABOVE_MOB_LAYER
-		if(EAST)
-			target_pixel_x = 16
-		if(WEST)
-			target_pixel_x = -16
-		if(NORTHEAST)
-			target_pixel_x = 16
-			target_pixel_y = 16
-		if(NORTHWEST)
-			target_pixel_x = -16
-			target_pixel_y = 16
-		if(SOUTHEAST)
-			target_pixel_x = 16
-			target_pixel_y = -16
-			layer = ABOVE_MOB_LAYER
-		if(SOUTHWEST)
-			target_pixel_x = -16
-			target_pixel_y = -16
-			layer = ABOVE_MOB_LAYER
+	switch(angle) // DOPPLETHAL EDIT START
+		if(0, 360)
+			target_pixel_x = 0
+			target_pixel_y = 8
+		if(1 to 44)
+			target_pixel_x = round(4 * ((angle) / 45))
+			target_pixel_y = 8
+		if(45)
+			target_pixel_x = 8
+			target_pixel_y = 8
+		if(46 to 89)
+			target_pixel_x = 8
+			target_pixel_y = round(4 * ((90 - angle) / 45))
+		if(90)
+			target_pixel_x = 8
+			target_pixel_y = 0
+		if(91 to 134)
+			target_pixel_x = 8
+			target_pixel_y = round(-3 * ((angle - 90) / 45))
+		if(135)
+			target_pixel_x = 8
+			target_pixel_y = -6
+		if(136 to 179)
+			target_pixel_x = round(4 * ((180 - angle) / 45))
+			target_pixel_y = -6
+		if(180)
+			target_pixel_x = 0
+			target_pixel_y = -6
+		if(181 to 224)
+			target_pixel_x = round(-6 * ((angle - 180) / 45))
+			target_pixel_y = -6
+		if(225)
+			target_pixel_x = -6
+			target_pixel_y = -6
+		if(226 to 269)
+			target_pixel_x = -6
+			target_pixel_y = round(-6 * ((270 - angle) / 45))
+		if(270)
+			target_pixel_x = -6
+			target_pixel_y = 0
+		if(271 to 314)
+			target_pixel_x = -6
+			target_pixel_y = round(8 * ((angle - 270) / 45))
+		if(315)
+			target_pixel_x = -6
+			target_pixel_y = 8
+		if(316 to 359)
+			target_pixel_x = round(-6 * ((360 - angle) / 45))
+			target_pixel_y = 8 // DOPPLETHAL EDIT END
 	animate(src, pixel_x = target_pixel_x, pixel_y = target_pixel_y, alpha = 0, time = duration)
 
 /obj/effect/temp_visual/dir_setting/bloodsplatter/xenosplatter
