@@ -80,11 +80,13 @@ GLOBAL_LIST_INIT(see_through_maps, list(
 		list(0, 0, 0), list(1, 0, 0), list(2, 0, 0), list(3, 0, 0), list(4, 0, 0), list(5, 0, 0), list(6, 0, 0), list(7, 0, 0), list(8, 0, 0), list(9, 0, 0), list(10, 0, 0), list(11, 0, 0), list(12, 0, 0), list(13, 0, 0)
 	),
 	SEE_THROUGH_MAP_TALL_WALLS = list(
-		list(-2, 5, 0), list(-1, 5, 0), list(0, 5, 0), list(1, 5, 0), list(2, 5, 0),
-		list(-2, 4, 0), list(-1, 4, 0), list(0, 4, 0), list(1, 4, 0), list(2, 4, 0),
-		list(-2, 3, 0), list(-1, 3, 0), list(0, 3, 0), list(1, 3, 0), list(2, 3, 0),
-		list(-2, 2, 0), list(-1, 2, 0), list(0, 2, 0), list(1, 2, 0), list(2, 2, 0),
-		list(-2, 1, 0), list(-1, 1, 0), list(0, 1, 0), list(1, 1, 0), list(2, 1, 0)
+		list(-3, 7, 0), list(-2, 7, 0), list(-1, 7, 0), list(0, 7, 0), list(1, 7, 0), list(2, 7, 0), list(3, 7, 0),
+		list(-3, 6, 0), list(-2, 6, 0), list(-1, 6, 0), list(0, 6, 0), list(1, 6, 0), list(2, 6, 0), list(3, 6, 0),
+		list(-3, 5, 0), list(-2, 5, 0), list(-1, 5, 0), list(0, 5, 0), list(1, 5, 0), list(2, 5, 0), list(3, 5, 0),
+		list(-3, 4, 0), list(-2, 4, 0), list(-1, 4, 0), list(0, 4, 0), list(1, 4, 0), list(2, 4, 0), list(3, 4, 0),
+		list(-3, 3, 0), list(-2, 3, 0), list(-1, 3, 0), list(0, 3, 0), list(1, 3, 0), list(2, 3, 0), list(3, 3, 0),
+		list(-3, 2, 0), list(-2, 2, 0), list(-1, 2, 0), list(0, 2, 0), list(1, 2, 0), list(2, 2, 0), list(3, 2, 0),
+		list(-3, 1, 0), list(-2, 1, 0), list(-1, 1, 0), list(0, 1, 0), list(1, 1, 0), list(2, 1, 0), list(3, 1, 0)
 	)
 ))
 
