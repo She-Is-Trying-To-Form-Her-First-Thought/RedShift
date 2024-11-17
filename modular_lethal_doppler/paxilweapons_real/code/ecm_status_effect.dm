@@ -13,7 +13,7 @@
 /datum/status_effect/ecm_jammed/on_apply()
 	to_chat(owner, span_userdanger("Something is causing electronic interference with your vision!"))
 	owner.overlay_fullscreen("jamming", /atom/movable/screen/fullscreen/ecm_static)
-	owner.overlay_fullscreen("jamming_vignette", /atom/movable/screen/fullscreen/crit/vision, 6)
+	owner.overlay_fullscreen("jamming_vignette", /atom/movable/screen/fullscreen/crit/vision, 9)
 	return ..()
 
 /datum/status_effect/ecm_jammed/on_remove()

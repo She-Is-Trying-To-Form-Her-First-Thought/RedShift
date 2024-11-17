@@ -195,8 +195,8 @@
 		"cross" = 1,
 		"curl" = 1,
 	)
-	width = 64
-	height = 64
+	width = 32
+	height = 32
 	count = 7
 	spawning = 5
 	lifespan = 1 SECONDS
