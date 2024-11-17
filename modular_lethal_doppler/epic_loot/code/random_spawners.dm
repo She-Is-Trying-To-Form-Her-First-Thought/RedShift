@@ -485,6 +485,7 @@
 		/obj/item/ammo_box/magazine/c12chinmoku/standard = 1,
 		/obj/item/ammo_box/magazine/c12nomi = 2,
 		/obj/item/ammo_box/magazine/c8marsian = 2,
+		/obj/item/ammo_box/magazine/karim = 1,
 		// Shotgun shells
 		/obj/item/ammo_box/magazine/ammo_stack/s12gauge/prefilled = 2,
 		/obj/item/ammo_box/magazine/ammo_stack/s12gauge/prefilled/flechette = 2,
@@ -531,7 +532,9 @@
 		/obj/effect/spawner/random/sakhno = 3,
 		/obj/item/gun/ballistic/shotgun/riot/sol = 3,
 		/obj/item/gun/ballistic/shotgun/riot/sol/evil = 2,
-		/obj/item/gun/ballistic/rifle/boltaction/prime = 2,
+		/obj/item/gun/ballistic/rifle/osako = 2,
+		/obj/item/gun/ballistic/rifle/osako/scoped = 2,
+		/obj/item/gun/ballistic/automatic/karim = 1,
 		/obj/item/gun/energy/laser = 3,
 		/obj/item/gun/energy/laser/hellgun = 2,
 		/obj/item/gun/energy/tesla_cannon = 2,

@@ -146,9 +146,9 @@
 	loot = list(
 		/obj/item/gun/ballistic/automatic/sol_grenade_launcher = 1,
 		/obj/item/gun/ballistic/automatic/xhihao_smg = 1,
-		/obj/effect/spawner/random/lethalstation_armor_set/gun_actually/sakhno = 1,
+		/obj/effect/spawner/random/lethalstation_armor_set/gun_actually/osako = 1,
 		/obj/effect/spawner/random/lethalstation_armor_set/gun_actually/shotgun = 1,
-		/obj/effect/spawner/random/lethalstation_armor_set/gun_actually/sakhno_moderna = 1,
+		/obj/effect/spawner/random/lethalstation_armor_set/gun_actually/scoped_osako = 1,
 		/obj/item/gun/energy/laser = 1,
 		/obj/item/gun/energy/e_gun = 1,
 		/obj/item/gun/ballistic/automatic/lanca = 1,
@@ -157,15 +157,15 @@
 		/obj/effect/spawner/random/lethalstation_armor_set/gun_actually/super_shotgun = 1,
 	)
 
-/obj/effect/spawner/random/lethalstation_armor_set/gun_actually/sakhno
+/obj/effect/spawner/random/lethalstation_armor_set/gun_actually/osako
 	loot = list(
-		/obj/effect/spawner/random/sakhno,
+		/obj/item/gun/ballistic/rifle/osako,
 		/obj/item/ammo_box/magazine/ammo_stack/c310_strilka/prefilled,
 	)
 
-/obj/effect/spawner/random/lethalstation_armor_set/gun_actually/sakhno_moderna
+/obj/effect/spawner/random/lethalstation_armor_set/gun_actually/scoped_osako
 	loot = list(
-		/obj/item/gun/ballistic/rifle/boltaction/prime,
+		/obj/item/gun/ballistic/rifle/osako/scoped,
 		/obj/item/ammo_box/magazine/ammo_stack/c310_strilka/prefilled/kedown,
 	)
 
@@ -202,7 +202,7 @@
 		/obj/item/gun/energy/tesla_cannon = 1,
 		/obj/item/gun/ballistic/automatic/suppressed_rifle/marksman = 1,
 		/obj/item/gun/ballistic/automatic/nomi_shotgun = 1,
-		/obj/item/gun/energy/pulse = 1,
+		/obj/item/gun/ballistic/automatic/karim = 1,
 	)
 
 /obj/effect/spawner/random/lethalstation_armor_set/gun_actually/shotgun_evil
