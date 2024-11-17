@@ -24,7 +24,6 @@
 /obj/item/ammo_box/magazine/ammo_stack/Initialize(mapload)
 	. = ..()
 	AddElement(/datum/element/can_shatter, number_of_shards = 0, shattering_sound = 'sound/items/weapons/gun/general/mag_bullet_remove.ogg', shatters_as_weapon = TRUE)
-	update_appearance()
 
 /obj/item/ammo_box/magazine/ammo_stack/attack_self(mob/user)
 	. = ..()
@@ -55,8 +54,8 @@
 
 	icon_state = base_icon_state
 
-	for(var/obj/item/iterated_casing in stored_ammo)
-		var/image/overlayed_item = image(icon = iterated_casing.icon, icon_state = iterated_casing.icon_state, pixel_x = pick(casing_x_positions), pixel_y = rand((-16 + casing_y_padding), (16 - casing_y_padding)))
+	for(var/obj/item/ammo_casing/iterated_casing as anything in stored_ammo)
+		var/image/overlayed_item = image(icon = iterated_casing.icon, icon_state = "[iterated_casing.base_icon_state]-live", pixel_x = pick(casing_x_positions), pixel_y = rand((-16 + casing_y_padding), (16 - casing_y_padding)))
 		add_overlay(overlayed_item)
 
 // Allows ammo casings to be attacked together to make a new stack

@@ -47,6 +47,7 @@
 		As a side benefit (or downside), these also appear on most motion detectors due to their unique sound signature."
 	icon = 'icons/obj/devices/stock_parts.dmi'
 	icon_state = "quadratic_capacitor"
+	anchored = TRUE
 
 /obj/item/detector_jammer/Initialize(mapload)
 	. = ..()

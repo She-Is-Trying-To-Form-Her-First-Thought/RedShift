@@ -169,6 +169,8 @@
 	icon_state = "ecm_holder"
 	opacity = FALSE
 	lifetime = 20 SECONDS
+	pixel_x = 0
+	pixel_y = 0
 	/// Holder for the chaff particles
 	var/obj/effect/abstract/particle_holder/particle_effect
 
