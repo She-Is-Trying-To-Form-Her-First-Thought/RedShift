@@ -7298,8 +7298,6 @@
 #include "modular_lethal_doppler\paxilweapons_real\code\guns\yari.dm"
 #include "modular_lethal_doppler\paxilweapons_real\code\guns\zomushi.dm"
 #include "modular_lethal_doppler\random_pouches\code\bags.dm"
-#include "modular_lethal_doppler\shotgun_shells\code\ammobox.dm"
-#include "modular_lethal_doppler\shotgun_shells\code\shotgun.dm"
 #include "modular_lethal_doppler\synth_wounds_not_a_single_time\pierce.dm"
 #include "modular_lethal_doppler\synth_wounds_not_a_single_time\robotic_blunt.dm"
 #include "modular_lethal_doppler\synth_wounds_not_a_single_time\robotic_blunt_T2.dm"

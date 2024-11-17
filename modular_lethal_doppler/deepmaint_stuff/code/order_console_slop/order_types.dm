@@ -133,24 +133,6 @@
 	item_path = /obj/item/ammo_box/magazine/c12nomi/starts_empty
 	cost_per_order = 100
 
-/datum/orderable_item/shotgun_man/magnum
-	name = "12ga magnum blockshot ammo box"
-	desc = "A box of 15 magnum blockshot shells. The size of the pellet is larger in diameter than the typical shot, but there are less of them inside each shell."
-	item_path = /obj/item/ammo_box/advanced/s12gauge/magnum
-	cost_per_order = 100
-
-/datum/orderable_item/shotgun_man/express
-	name = "12ga express pelletshot ammo box"
-	desc = "A box of 15 express pelletshot shells. The size of the pellet is smaller in diameter than the typical shot, but there are more of them inside each shell."
-	item_path = /obj/item/ammo_box/advanced/s12gauge/express
-	cost_per_order = 100
-
-/datum/orderable_item/shotgun_man/flechette
-	name = "12ga flechette ammo box"
-	desc = "A box of 15 flechette shells. Each shell contains a small group of tumbling blades that excel at causing terrible wounds."
-	item_path = /obj/item/ammo_box/advanced/s12gauge/flechette
-	cost_per_order = 200
-
 // Consumable medical stuff
 
 /datum/orderable_item/medical_consumable

@@ -238,6 +238,8 @@
 	ex_flame = 0
 
 /obj/projectile/bullet/shrapnel/short_range
+	icon = 'modular_lethal_doppler/paxilweapons_real/icons/projectiles.dmi'
+	icon_state = "shortbullet"
 	range = 2
 
 // .980 phosphor grenade
