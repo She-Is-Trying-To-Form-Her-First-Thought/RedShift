@@ -95,16 +95,18 @@
 	spread = initial(spread)
 	recoil = initial(recoil)
 	w_class = initial(w_class)
+	cut_overlays()
 	update_appearance()
-	var/image/stock_overlay = image(icon = icon, icon_state = "[base_icon_state]_stock")
+	var/image/stock_overlay = image(icon = icon, icon_state = "[icon_state]_stock")
 	add_overlay(stock_overlay)
 
 /obj/item/gun/ballistic/automatic/sol_rifle/evil/proc/retract_stock()
 	spread = 15
 	recoil = 2
 	w_class = WEIGHT_CLASS_NORMAL
+	cut_overlays()
 	update_appearance()
-	var/image/stock_overlay = image(icon = icon, icon_state = "[base_icon_state]_stock_flat")
+	var/image/stock_overlay = image(icon = icon, icon_state = "[icon_state]_stock_flat")
 	add_overlay(stock_overlay)
 
 /obj/item/gun/ballistic/automatic/sol_rifle/evil/no_mag
