@@ -77,7 +77,7 @@
 	force = 10
 	accepted_magazine_type = /obj/item/ammo_box/magazine/internal/shot/shell_cannon
 	obj_flags = UNIQUE_RENAME
-	rack_sound = 'modular_lethal_doppler/paxilguns_prequel/sound/shotgun_rack.ogg'
+	rack_sound = 'modular_lethal_doppler/paxilweapons_real/sound/doesnt_miss/shotgun_rack.ogg'
 	semi_auto = TRUE
 	bolt_type = BOLT_TYPE_NO_BOLT
 	can_be_sawn_off = FALSE
@@ -88,6 +88,7 @@
 	recoil = 4
 	inhand_x_dimension = 32
 	inhand_y_dimension = 32
+	trigger_guard = TRIGGER_GUARD_ALLOW_ALL
 
 /obj/item/ammo_box/magazine/internal/shot/shell_cannon
 	name = "shell launch system internal magazine"

@@ -28,7 +28,6 @@
 		/datum/crafting_bench_recipe_real/sindano,
 		/datum/crafting_bench_recipe_real/shotgun,
 		/datum/crafting_bench_recipe_real/sakhno,
-		/datum/crafting_bench_recipe_real/sakhno_larp,
 		/datum/crafting_bench_recipe_real/boxer,
 		/datum/crafting_bench_recipe_real/chokyu,
 		/datum/crafting_bench_recipe_real/suppressed_rifle,
@@ -56,7 +55,6 @@
 	. += span_notice("<b>1</b> graphics processor = <b>1</b> sindano submachinegun")
 	. += span_notice("<b>1</b> military circuit board + <b>1</b> civilian circuit board = <b>1</b> renoster shotgun")
 	. += span_notice("<b>1</b> processor core = <b>1</b> sakhno-xhihao rifle")
-	. += span_notice("<b>2</b> sealed diaries = <b>1</b> rengo precision rifle")
 	. += span_notice("<b>1</b> power supply + <b>1</b> disk drive = <b>1</b> bogseo submachinegun")
 	. += span_notice("<b>1</b> eyes = <b>1</b> chokyu sniper rifle")
 	. += span_notice("<b>1</b> stomach = <b>1</b> ramu 6ga shotgun")
@@ -189,7 +187,7 @@
 	recipe_requirements = list(
 		/obj/item/epic_loot/graphics = 1,
 	)
-	resulting_item = /obj/item/gun/ballistic/automatic/sol_smg/evil
+	resulting_item = /obj/item/gun/ballistic/automatic/sol_smg
 
 /datum/crafting_bench_recipe_real/shotgun
 	recipe_name = "renoster shotgun"
@@ -197,7 +195,7 @@
 		/obj/item/epic_loot/military_circuit = 1,
 		/obj/item/epic_loot/civilian_circuit = 1,
 	)
-	resulting_item = /obj/item/gun/ballistic/shotgun/riot/sol/evil/thunderdome
+	resulting_item = /obj/item/gun/ballistic/shotgun/riot/sol/evil
 
 /datum/crafting_bench_recipe_real/sakhno
 	recipe_name = "sakhno-xhihao rifle"
@@ -205,13 +203,6 @@
 		/obj/item/epic_loot/processor = 1,
 	)
 	resulting_item = /obj/item/gun/ballistic/rifle/boltaction/prime
-
-/datum/crafting_bench_recipe_real/sakhno_larp
-	recipe_name = "rengo precision rifle"
-	recipe_requirements = list(
-		/obj/item/epic_loot/diary = 2,
-	)
-	resulting_item = /obj/item/gun/ballistic/rifle/boltaction/sporterized
 
 /datum/crafting_bench_recipe_real/boxer
 	recipe_name = "bogseo submachinegun"
@@ -224,11 +215,11 @@
 // Guns that require killing your fellow man to attain
 
 /datum/crafting_bench_recipe_real/chokyu
-	recipe_name = "chokyu sniper rifle"
+	recipe_name = "ransu marksman rifle"
 	recipe_requirements = list(
 		/obj/item/organ/eyes = 1,
 	)
-	resulting_item = /obj/item/gun/ballistic/rifle/chokyu
+	resulting_item = /obj/item/gun/ballistic/automatic/suppressed_rifle/marksman
 
 /datum/crafting_bench_recipe_real/super_shotgun
 	recipe_name = "ramu 6ga shotgun"

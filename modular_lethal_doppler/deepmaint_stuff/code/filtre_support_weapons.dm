@@ -51,7 +51,6 @@
 /obj/item/choice_beacon/filtre/breaching/generate_display_names()
 	var/static/list/selectable_gun_types = list(
 		"Ramu 6 GA Shotgun" = /obj/item/storage/toolbox/guncase/doppla/super_shotgun,
-		"Gureibu-GL Suppressed Rifle" = /obj/item/storage/toolbox/guncase/doppla/launcher_suppressed_rifle,
 		"Nomi Repeating Shotgun" = /obj/item/storage/toolbox/guncase/doppla/nomi_shotgun,
 		"Kiboko Grenade Launcher" = /obj/item/storage/toolbox/guncase/doppla/carwo_large_case/thunderdome_kiboko/evil,
 	)

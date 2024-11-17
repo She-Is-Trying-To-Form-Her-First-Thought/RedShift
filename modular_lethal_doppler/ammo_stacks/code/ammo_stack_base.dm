@@ -54,8 +54,8 @@
 
 	icon_state = base_icon_state
 
-	for(var/obj/item/ammo_casing/iterated_casing in stored_ammo)
-		var/image/overlayed_item = image(icon = iterated_casing.icon, icon_state = iterated_casing.icon_state, pixel_x = pick(casing_x_positions), pixel_y = rand((-16 + casing_y_padding), (16 - casing_y_padding)))
+	for(var/obj/item/ammo_casing/iterated_casing as anything in stored_ammo)
+		var/image/overlayed_item = image(icon = iterated_casing.icon, icon_state = "[iterated_casing.icon_state]-live", pixel_x = pick(casing_x_positions), pixel_y = rand((-16 + casing_y_padding), (16 - casing_y_padding)))
 		add_overlay(overlayed_item)
 
 // Allows ammo casings to be attacked together to make a new stack

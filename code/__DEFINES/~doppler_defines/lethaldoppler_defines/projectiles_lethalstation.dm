@@ -1,11 +1,11 @@
 /// .40 sol with a bigger bullet and less powder, for use in the yari rifles
 #define CALIBER_12MMCHINMOKU "12mm Chinmoku"
-
 /// Marsian sniper round in 8mm
 #define CALIBER_8MMMARSIAN "8mm Marsian"
-
 /// Giant shotgun shells teehee
 #define CALIBER_6GAUGE "6 Gauge"
+/// Pulse rifle ammo YEAH ALIENS YEAH
+#define CALIBER_4MMEUROPAN "4mm Europan"
 
 
 // BULLET ARMOR VALUES FOR DIFFERENT CLASSES OF ARMOR
@@ -26,5 +26,8 @@
 #define TRAIT_INFIL_BUFF "gakster_infil_buff"
 /// If the owner of this trait cannot use the exit ladders
 #define TRAIT_NO_EXTRACT "remember_you_are_here_forever"
-// If the owner of this trait should extract to the super secret ninja hideout
-#define TRAIT_EXTRACT_TO_NINJA_HIDEOUT "extract_to_ninja_hideout"
+
+/// Color for green tracers
+#define GREEN_TRACER_COLOR "#c4f0c2"
+/// Color for yellow tracers
+#define YELLOW_TRACER_COLOR "#ffe998"
