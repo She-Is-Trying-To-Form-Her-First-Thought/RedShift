@@ -21,21 +21,9 @@
 	item_path = /obj/item/ammo_box/magazine/c35sol_pistol/stendo/starts_empty
 	cost_per_order = 100
 
-/datum/orderable_item/peacekeeper/sol35_ripper
-	name = ".35 Sol Short ripper ammo box"
-	desc = "A box of .35 Sol Short pistol rounds, holds twenty-four rounds. The purple stripe indicates this should hold hollowpoint-like ammunition."
-	item_path = /obj/item/ammo_box/c35sol/ripper
-	cost_per_order = 50
-
 /datum/orderable_item/peacekeeper/trappiste_magazine
 	name = "Trappiste Pistol Magazine"
 	item_path = /obj/item/ammo_box/magazine/c585trappiste_pistol/spawns_empty
-	cost_per_order = 50
-
-/datum/orderable_item/peacekeeper/trappiste_hollowpoint
-	name = ".585 Trappiste hollowhead ammo box"
-	desc = "A box of .585 Trappiste pistol rounds, holds twelve cartridges. The purple stripe indicates that it should hold hollowpoint-like rounds."
-	item_path = /obj/item/ammo_box/c585trappiste/hollowpoint
 	cost_per_order = 50
 
 /datum/orderable_item/peacekeeper/rifle_magazine
@@ -48,12 +36,6 @@
 	item_path = /obj/item/ammo_box/magazine/c40sol_rifle/standard/starts_empty
 	cost_per_order = 100
 
-/datum/orderable_item/peacekeeper/sol40_match
-	name = ".40 Sol Long match ammo box"
-	item_path = /obj/item/ammo_box/c40sol/pierce
-	desc = "A box of .40 Sol Long rifle rounds, holds thirty bullets. The yellow stripe indicates this should hold high performance ammuniton."
-	cost_per_order = 100
-
 /datum/orderable_item/peacekeeper/grenade_magazine
 	name = "Kiboko Magazine"
 	item_path = /obj/item/ammo_box/magazine/c980_grenade/starts_empty
@@ -63,12 +45,6 @@
 	name = "Kiboko Drum"
 	item_path = /obj/item/ammo_box/magazine/c980_grenade/drum/starts_empty
 	cost_per_order = 200
-
-/datum/orderable_item/peacekeeper/kiboko_shrapnel
-	name = ".980 Tydhouer shrapnel grenade ammo box"
-	desc = "A box of four .980 Tydhouer shrapnel grenades. Instructions on the box indicate these are shrapnel rounds. Its also covered in hazard signs, odd."
-	item_path = /obj/item/ammo_box/c980grenade/shrapnel
-	cost_per_order = 100
 
 // nri larp stuff
 
@@ -90,29 +66,6 @@
 	name = "Lanca Magazine"
 	item_path = /obj/item/ammo_box/magazine/lanca/spawns_empty
 	cost_per_order = 50
-
-/datum/orderable_item/imperial/ap_strilka
-	name = ".310 Strilka piercing ammo box"
-	desc = "A box of .310 Strilka piercing rifle rounds, holds ten cartridges."
-	item_path = /obj/item/ammo_box/c310_cargo_box/piercing
-	cost_per_order = 100
-
-/datum/orderable_item/imperial/plasmathrower
-	name = "Słońce Plasma Projector"
-	item_path = /obj/item/gun/ballistic/automatic/pistol/plasma_thrower
-	cost_per_order = 200
-
-/datum/orderable_item/imperial/wylom
-	name = "Wyłom Anti-Materiel Rifle"
-	desc = "A massive, outdated beast of an anti materiel rifle."
-	item_path = /obj/item/gun/ballistic/automatic/wylom
-	cost_per_order = 1200
-
-/datum/orderable_item/imperial/wylom_ammo
-	name = "Wyłom Anti-Materiel Rifle magazine"
-	desc = "Ammo for the Wyłom."
-	item_path = /obj/item/ammo_box/magazine/wylom
-	cost_per_order = 500
 
 // Some of the special larp ammo
 

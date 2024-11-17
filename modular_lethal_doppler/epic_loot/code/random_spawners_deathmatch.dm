@@ -101,7 +101,6 @@
 		/obj/item/gun/ballistic/automatic/pistol/sol/evil = 1,
 		/obj/effect/spawner/random/lethalstation_armor_set/gun_actually/signalis_real = 1,
 		/obj/item/gun/energy/e_gun/mini = 1,
-		/obj/item/gun/ballistic/automatic/pistol/plasma_thrower = 1,
 		/obj/item/gun/ballistic/automatic/pistol/weevil = 1,
 		/obj/effect/spawner/random/lethalstation_armor_set/gun_actually/kurwa = 1,
 	)
@@ -114,8 +113,6 @@
 		/obj/item/gun/ballistic/automatic/pistol/trappiste = 1,
 		/obj/effect/spawner/random/lethalstation_armor_set/gun_actually/takbok = 1,
 		/obj/item/gun/ballistic/automatic/sol_smg = 1,
-		/obj/item/gun/ballistic/automatic/sol_smg/evil = 1,
-		/obj/item/gun/energy/modular_laser_rifle/carbine = 1,
 		/obj/item/gun/ballistic/automatic/pistol/plasma_marksman = 1,
 		/obj/item/gun/ballistic/automatic/miecz = 1,
 		/obj/item/gun/ballistic/automatic/seiba_smg = 1,
@@ -147,7 +144,6 @@
 	desc = "Automagically transforms into a super serious firearm."
 	icon_state = "random_rare_gun"
 	loot = list(
-		/obj/item/gun/ballistic/automatic/sol_rifle/marksman = 1,
 		/obj/item/gun/ballistic/automatic/sol_grenade_launcher = 1,
 		/obj/item/gun/ballistic/automatic/xhihao_smg = 1,
 		/obj/effect/spawner/random/lethalstation_armor_set/gun_actually/sakhno = 1,
@@ -170,13 +166,13 @@
 /obj/effect/spawner/random/lethalstation_armor_set/gun_actually/sakhno_moderna
 	loot = list(
 		/obj/item/gun/ballistic/rifle/boltaction/prime,
-		/obj/item/ammo_box/magazine/ammo_stack/c310_strilka/prefilled/ap,
+		/obj/item/ammo_box/magazine/ammo_stack/c310_strilka/prefilled/kedown,
 	)
 
 /obj/effect/spawner/random/lethalstation_armor_set/gun_actually/shotgun
 	loot = list(
 		/obj/item/gun/ballistic/shotgun/riot/sol/thunderdome,
-		/obj/item/ammo_box/magazine/ammo_stack/s12gauge/prefilled/dragonsbreath,
+		/obj/item/ammo_box/magazine/ammo_stack/s12gauge/prefilled
 	)
 
 /obj/effect/spawner/random/lethalstation_armor_set/gun_actually/lesbian_gun
@@ -204,11 +200,7 @@
 		/obj/effect/spawner/random/lethalstation_armor_set/gun_actually/shotgun_evil = 1,
 		/obj/item/gun/energy/laser/hellgun = 1,
 		/obj/item/gun/energy/tesla_cannon = 1,
-		/obj/item/gun/energy/modular_laser_rifle = 1,
-		/obj/item/gun/ballistic/automatic/wylom = 1,
-		/obj/item/gun/ballistic/automatic/suppressed_rifle/grenade_launcher = 1,
 		/obj/item/gun/ballistic/automatic/suppressed_rifle/marksman = 1,
-		/obj/item/gun/ballistic/rifle/chokyu = 1,
 		/obj/item/gun/ballistic/automatic/nomi_shotgun = 1,
 		/obj/item/gun/energy/pulse = 1,
 	)
