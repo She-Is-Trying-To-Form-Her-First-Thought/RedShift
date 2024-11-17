@@ -10,7 +10,7 @@
 	lefthand_file = 'modular_lethal_doppler/paxilweapons_real/icons/onmob/guns_inhand_left.dmi'
 	righthand_file = 'modular_lethal_doppler/paxilweapons_real/icons/onmob/guns_inhand_right.dmi'
 	inhand_icon_state = "seiba"
-	w_class = WEIGHT_CLASS_NORMAL
+	w_class = WEIGHT_CLASS_BULKY
 	weapon_weight = WEAPON_MEDIUM
 	slot_flags = ITEM_SLOT_BELT
 	accepted_magazine_type = /obj/item/ammo_box/magazine/miecz
@@ -25,6 +25,7 @@
 	burst_size = 3
 	fire_delay = 0.18 SECONDS
 	spread = 7.5
+	recoil = 0.25
 	muzzleflash_iconstate = "muzzle_flash_light"
 	/// Is the stock extended or nah
 	var/stock_extended = TRUE
@@ -60,15 +61,15 @@
 	recoil = initial(recoil)
 	w_class = initial(w_class)
 	update_appearance()
-	var/image/stock_overlay = image(icon = icon, icon_state = "[base_icon_state]_stock")
+	var/image/stock_overlay = image(icon = icon, icon_state = "[icon_state]_stock")
 	add_overlay(stock_overlay)
 
 /obj/item/gun/ballistic/automatic/seiba_smg/proc/retract_stock()
 	spread = 15
-	recoil = 2
+	recoil = 1.5
 	w_class = WEIGHT_CLASS_NORMAL
 	update_appearance()
-	var/image/stock_overlay = image(icon = icon, icon_state = "[base_icon_state]_stock_flat")
+	var/image/stock_overlay = image(icon = icon, icon_state = "[icon_state]_stock_flat")
 	add_overlay(stock_overlay)
 
 /obj/item/gun/ballistic/automatic/seiba_smg/examine_more(mob/user)

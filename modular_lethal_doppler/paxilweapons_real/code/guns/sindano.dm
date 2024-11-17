@@ -24,6 +24,7 @@
 	burst_size = 3
 	fire_delay = 0.2 SECONDS
 	spread = 7.5
+	recoil = 0.25
 	pickup_sound = 'modular_lethal_doppler/paxilweapons_real/sound/pickup_sounds/drop_mediumgun.wav'
 	drop_sound = 'modular_lethal_doppler/paxilweapons_real/sound/pickup_sounds/drop_mediumgun.wav'
 

@@ -15,6 +15,7 @@
 	suppressor_x_offset = 7
 	suppressor_y_offset = 0
 	fire_delay = 0.25 SECONDS
+	recoil = 0.25
 	muzzleflash_iconstate = "muzzle_flash_light"
 
 /obj/item/gun/ballistic/automatic/pistol/weevil/give_manufacturer_examine()

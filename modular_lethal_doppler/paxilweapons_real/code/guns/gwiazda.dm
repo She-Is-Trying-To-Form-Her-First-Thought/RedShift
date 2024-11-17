@@ -19,6 +19,7 @@
 	bolt_type = BOLT_TYPE_OPEN
 	fire_delay = 0.6 SECONDS
 	spread = 2.5
+	recoil = 0.25
 	projectile_damage_multiplier = 2 //30 damage a shot
 	projectile_wound_bonus = 10 // +55 of the base projectile, burn baby burn
 	pickup_sound = 'modular_lethal_doppler/paxilweapons_real/sound/pickup_sounds/drop_lightgun.wav'

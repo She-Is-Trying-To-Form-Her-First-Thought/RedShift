@@ -57,7 +57,7 @@
 	recoil = initial(recoil)
 	w_class = initial(w_class)
 	update_appearance()
-	var/image/stock_overlay = image(icon = icon, icon_state = "[base_icon_state]_stock")
+	var/image/stock_overlay = image(icon = icon, icon_state = "[icon_state]_stock")
 	add_overlay(stock_overlay)
 
 /obj/item/gun/ballistic/shotgun/riot/sol/proc/retract_stock()
@@ -65,7 +65,7 @@
 	recoil = 3
 	w_class = WEIGHT_CLASS_NORMAL
 	update_appearance()
-	var/image/stock_overlay = image(icon = icon, icon_state = "[base_icon_state]_stock_flat")
+	var/image/stock_overlay = image(icon = icon, icon_state = "[icon_state]_stock_flat")
 	add_overlay(stock_overlay)
 
 /obj/item/gun/ballistic/shotgun/riot/sol/examine_more(mob/user)

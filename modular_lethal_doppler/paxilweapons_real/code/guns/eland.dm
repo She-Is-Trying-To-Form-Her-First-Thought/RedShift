@@ -9,6 +9,7 @@
 	suppressor_x_offset = -1
 	w_class = WEIGHT_CLASS_SMALL
 	can_suppress = TRUE
+	recoil = 0.25
 	pickup_sound = 'modular_lethal_doppler/paxilweapons_real/sound/pickup_sounds/drop_lightgun.wav'
 	drop_sound = 'modular_lethal_doppler/paxilweapons_real/sound/pickup_sounds/drop_lightgun.wav'
 

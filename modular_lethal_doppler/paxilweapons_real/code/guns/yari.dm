@@ -29,6 +29,7 @@
 	fire_delay = 0.3 SECONDS
 	actions_types = list()
 	spread = 7.5
+	recoil = 0.25
 
 /obj/item/gun/ballistic/automatic/suppressed_rifle/Initialize(mapload)
 	. = ..()

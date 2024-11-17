@@ -22,6 +22,7 @@
 	can_suppress = FALSE
 	burst_size = 1
 	fire_delay = 5
+	recoil = 0.5
 	actions_types = list()
 	pickup_sound = 'modular_lethal_doppler/paxilweapons_real/sound/pickup_sounds/drop_heavygun.wav'
 	drop_sound = 'modular_lethal_doppler/paxilweapons_real/sound/pickup_sounds/drop_heavygun.wav'

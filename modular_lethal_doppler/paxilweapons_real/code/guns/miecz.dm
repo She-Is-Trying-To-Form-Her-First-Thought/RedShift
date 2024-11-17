@@ -27,6 +27,7 @@
 	fire_delay = 0.2 SECONDS
 	actions_types = list()
 	spread = 5
+	recoil = 0.25
 	pickup_sound = 'modular_lethal_doppler/paxilweapons_real/sound/pickup_sounds/drop_mediumgun.wav'
 	drop_sound = 'modular_lethal_doppler/paxilweapons_real/sound/pickup_sounds/drop_mediumgun.wav'
 

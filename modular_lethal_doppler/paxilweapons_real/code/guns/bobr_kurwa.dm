@@ -11,6 +11,7 @@
 	icon_state = "bobr"
 	fire_sound = 'modular_lethal_doppler/paxilweapons_real/sound/revolver/revolver_heavy.ogg'
 	spread = SAWN_OFF_ACC_PENALTY
+	recoil = 0.5
 	pickup_sound = 'modular_lethal_doppler/paxilweapons_real/sound/pickup_sounds/drop_lightgun.wav'
 	drop_sound = 'modular_lethal_doppler/paxilweapons_real/sound/pickup_sounds/drop_lightgun.wav'
 

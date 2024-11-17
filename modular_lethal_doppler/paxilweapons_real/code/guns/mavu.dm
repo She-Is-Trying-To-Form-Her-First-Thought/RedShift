@@ -12,6 +12,7 @@
 	suppressor_x_offset = 5
 	suppressor_y_offset = 0
 	fire_delay = 0.3 SECONDS
+	recoil = 0.25
 	pickup_sound = 'modular_lethal_doppler/paxilweapons_real/sound/pickup_sounds/drop_lightgun.wav'
 	drop_sound = 'modular_lethal_doppler/paxilweapons_real/sound/pickup_sounds/drop_lightgun.wav'
 
