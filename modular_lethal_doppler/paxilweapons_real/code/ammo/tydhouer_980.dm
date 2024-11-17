@@ -1,4 +1,5 @@
 #define GRENADE_SMOKE_RANGE 0.75
+#define GRENADE_ECM_RANGE 1.5
 
 // .980 grenades
 // Grenades that can be given a range to detonate at by their firing gun
@@ -157,7 +158,7 @@
 	playsound(src, 'modular_lethal_doppler/paxilweapons_real/sound/kiboko/grenade_burst.ogg', 50, TRUE, 5)
 	playsound(src, 'sound/effects/smoke.ogg', 50, TRUE, -3)
 	var/datum/effect_system/fluid_spread/smoke/ecm/smoke = new
-	smoke.set_up(GRENADE_SMOKE_RANGE, holder = src, location = src)
+	smoke.set_up(GRENADE_ECM_RANGE, holder = src, location = src)
 	smoke.start()
 
 /datum/effect_system/fluid_spread/smoke/ecm
@@ -237,6 +238,8 @@
 	ex_flame = 0
 
 /obj/projectile/bullet/shrapnel/short_range
+	icon = 'modular_lethal_doppler/paxilweapons_real/icons/projectiles.dmi'
+	icon_state = "shortbullet"
 	range = 2
 
 // .980 phosphor grenade
@@ -282,3 +285,4 @@
 	playsound(src, 'modular_lethal_doppler/paxilweapons_real/sound/kiboko/grenade_burst.ogg', 50, TRUE, -3)
 
 #undef GRENADE_SMOKE_RANGE
+#undef GRENADE_ECM_RANGE

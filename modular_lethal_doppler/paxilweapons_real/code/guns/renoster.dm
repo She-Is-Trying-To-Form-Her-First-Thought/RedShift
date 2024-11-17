@@ -56,6 +56,7 @@
 	spread = initial(spread)
 	recoil = initial(recoil)
 	w_class = initial(w_class)
+	cut_overlays()
 	update_appearance()
 	var/image/stock_overlay = image(icon = icon, icon_state = "[icon_state]_stock")
 	add_overlay(stock_overlay)
@@ -64,6 +65,7 @@
 	spread = 10
 	recoil = 3
 	w_class = WEIGHT_CLASS_NORMAL
+	cut_overlays()
 	update_appearance()
 	var/image/stock_overlay = image(icon = icon, icon_state = "[icon_state]_stock_flat")
 	add_overlay(stock_overlay)
