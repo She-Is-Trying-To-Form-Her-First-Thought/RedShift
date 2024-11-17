@@ -72,10 +72,22 @@
 	/// Cooldown for the visible message sent from gun flipping.
 	COOLDOWN_DECLARE(flip_cooldown)
 
+	light_system = OVERLAY_LIGHT // DOPPLETHAL ADDITION
+	light_range = 0 // DOPPLETHAL ADDITION
+	light_color = COLOR_WHITE // DOPPLETHAL ADDITION
+
+	var/obj/effect/muzzle_flash/muzzle_flash // DOPPLETHAL ADDITION
+	var/muzzle_flash_lum = 2 // DOPPLETHAL ADDITION
+	var/muzzleflash_iconstate // DOPPLETHAL ADDITION
+	var/muzzle_flash_color = COLOR_VERY_SOFT_YELLOW // DOPPLETHAL ADDITION
+	var/muzzle_effects = TRUE // DOPPLETHAL ADDITION
+
 /obj/item/gun/Initialize(mapload)
 	. = ..()
 	if(pin)
 		pin = new pin(src)
+
+	muzzle_flash = new(src, muzzleflash_iconstate) // DOPPLETHAL ADDITION
 
 	add_seclight_point()
 	add_bayonet_point()
@@ -87,6 +99,8 @@
 		QDEL_NULL(chambered)
 	if(isatom(suppressed)) //SUPPRESSED IS USED AS BOTH A TRUE/FALSE AND AS A REF, WHAT THE FUCKKKKKKKKKKKKKKKKK
 		QDEL_NULL(suppressed)
+	if(muzzle_flash) // DOPPLETHAL ADDITION
+		QDEL_NULL(muzzle_flash) // DOPPLETHAL ADDITION
 	return ..()
 
 /obj/item/gun/apply_fantasy_bonuses(bonus)
@@ -192,6 +206,10 @@
 	if(recoil && !tk_firing(user))
 		shake_camera(user, recoil + 1, recoil)
 	fire_sounds()
+
+	var/firing_angle = get_angle(user, pbtarget) // DOPPLETHAL ADDITION
+	muzzle_flash(firing_angle, user) // DOPPLETHAL ADDITION
+
 	if(suppressed || !message)
 		return
 	if(tk_firing(user))

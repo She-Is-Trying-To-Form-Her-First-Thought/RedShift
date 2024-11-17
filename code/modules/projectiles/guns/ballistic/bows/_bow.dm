@@ -25,6 +25,8 @@
 	/// whether the bow is drawn back
 	var/drawn = FALSE
 
+	muzzle_effects = FALSE // DOPPLETHAL ADDITION
+
 /obj/item/gun/ballistic/bow/update_icon_state()
 	. = ..()
 	icon_state = "[base_icon_state][drawn ? "_drawn" : ""]"

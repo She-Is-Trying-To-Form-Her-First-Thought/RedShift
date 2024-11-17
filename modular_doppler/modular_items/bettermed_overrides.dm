@@ -1,4 +1,5 @@
 /// == TOOL UPDATE ZONE ==
+/* // DOPPLETHAL EDIT ( THESE LOOK KINDA WEIRD MAN )
 /obj/item/scalpel
 	icon = 'modular_doppler/modular_items/icons/bettermed.dmi'
 
@@ -73,6 +74,7 @@
 
 /obj/item/storage/medkit/coroner
 	icon = 'modular_doppler/modular_items/icons/bettermed.dmi'
+*/
 
 /obj/item/storage/medkit/empty
 	empty = TRUE

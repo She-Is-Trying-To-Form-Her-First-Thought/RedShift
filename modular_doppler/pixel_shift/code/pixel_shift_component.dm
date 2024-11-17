@@ -80,7 +80,7 @@
 				owner.pixel_x++
 				is_shifted = TRUE
 		if(SOUTH)
-			if(owner.pixel_y >= -maximum_pixel_shift + owner.base_pixel_y)
+			if(owner.pixel_y >= 0 + owner.base_pixel_y) // LETHAL EDIT - if(owner.pixel_y >= -maximum_pixel_shift + owner.base_pixel_y)
 				owner.pixel_y--
 				is_shifted = TRUE
 		if(WEST)
