@@ -7311,4 +7311,5 @@
 #include "modular_lethal_doppler\tgmc_debris\code\particle_types.dm"
 #include "modular_lethal_doppler\wallem\code\icon_replacements.dm"
 #include "modular_lethal_doppler\wallem\code\wallening_real.dm"
+#include "modular_lethal_doppler\wallem\code\window_frames.dm"
 // END_INCLUDE

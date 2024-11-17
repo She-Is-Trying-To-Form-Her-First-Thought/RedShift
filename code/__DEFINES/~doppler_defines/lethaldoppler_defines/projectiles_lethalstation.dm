@@ -31,3 +31,6 @@
 #define GREEN_TRACER_COLOR "#c4f0c2"
 /// Color for yellow tracers
 #define YELLOW_TRACER_COLOR "#ffe998"
+
+/// Smooth group for window frames
+#define SMOOTH_GROUP_WINDOW_FRAMES S_OBJ(150)
