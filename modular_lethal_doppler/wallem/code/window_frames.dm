@@ -31,19 +31,20 @@
 	armor_type = /datum/armor/window_frame
 	max_integrity = 50
 	anchored = TRUE
-	/// If we spawn a window on top of this at mapload
+	/// If we spawn a window on top of this when created
 	var/start_with_window = FALSE
 	/// The frame overlay applied to this to hide wires under the edges but still show them underneath
 	var/frame_icon = 'icons/icon_cutter_deez/low_wall_frame/low_wall.dmi'
 	/// Typepath. Creates a corresponding window for this frame.
 	/// Is either a material sheet typepath (eg /obj/item/stack/sheet/glass) or a fulltile window typepath (eg /obj/structure/window/fulltile)
-	var/window_type = /obj/item/stack/sheet/glass
+	var/window_type = /obj/structure/window/fulltile
 
 /obj/structure/window_frame/Initialize(mapload)
 	. = ..()
 	update_appearance()
 	AddElement(/datum/element/climbable)
-	if(mapload && start_with_window)
+	AddElement(/datum/element/elevation, pixel_shift = 12)
+	if(start_with_window)
 		create_structure_window(window_type)
 
 /// Do we have a window ??
@@ -108,10 +109,8 @@
 /// Creates a window from the typepath given from window_type, which is either a glass sheet typepath or a /obj/structure/window subtype
 /obj/structure/window_frame/proc/create_structure_window(window_material_type)
 	var/obj/structure/window/our_window
-	if(ispath(window_material_type, /obj/structure/window))
+	if(ispath(window_material_type, /obj/structure))
 		our_window = new window_material_type(loc)
-		if(!our_window.fulltile)
-			stack_trace("Window frames can't use non fulltile windows!")
 	// window_material_type isnt a window typepath, so check if its a material typepath
 	if(ispath(window_material_type, /obj/item/stack/sheet/glass))
 		our_window = new /obj/structure/window/fulltile(loc)
@@ -121,12 +120,8 @@
 		our_window = new /obj/structure/window/plasma/fulltile(loc)
 	if(ispath(window_material_type, /obj/item/stack/sheet/plasmarglass))
 		our_window = new /obj/structure/window/reinforced/plasma/fulltile(loc)
-	if(ispath(window_material_type, /obj/item/stack/sheet/titaniumglass))
-		our_window = new /obj/structure/window/reinforced/shuttle(loc)
-	if(ispath(window_material_type, /obj/item/stack/sheet/plastitaniumglass))
-		our_window = new /obj/structure/window/reinforced/plasma/plastitanium(loc)
-	if(ispath(window_material_type, /obj/item/stack/sheet/paperframes))
-		our_window = new /obj/structure/window/paperframe(loc)
+	if(ispath(window_material_type, /obj/item/stack/sheet/plasmarglass))
+		our_window = new /obj/structure/grille/window(loc)
 	our_window.update_appearance()
 	return our_window
 
@@ -183,12 +178,28 @@
 /obj/structure/window_frame/has_window
 	start_with_window = TRUE
 
+/obj/structure/window_frame/has_window/reinforced
+	start_with_window = TRUE
+	window_type = /obj/structure/window/reinforced/fulltile
+
+/obj/structure/window_frame/has_window/grille_window
+	window_type = /obj/structure/grille/window
+	start_with_window = TRUE
+
 /obj/structure/window_frame/reinforced
 	name = "reinforced window frame"
-	window_type = /obj/item/stack/sheet/rglass
+	window_type = /obj/structure/window/reinforced/fulltile
 	armor_type = /datum/armor/window_frame_reinforced
 	max_integrity = 150
 	damage_deflection = 11
 
 /obj/structure/window_frame/reinforced/has_window
+	start_with_window = TRUE
+
+/obj/structure/window_frame/reinforced/has_window/plasma
+	window_type = /obj/structure/window/plasma/fulltile
+	start_with_window = TRUE
+
+/obj/structure/window_frame/reinforced/has_window/super_plasma
+	window_type = /obj/structure/window/reinforced/plasma/fulltile
 	start_with_window = TRUE

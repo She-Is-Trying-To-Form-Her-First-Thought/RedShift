@@ -34,3 +34,5 @@
 
 /// Smooth group for window frames
 #define SMOOTH_GROUP_WINDOW_FRAMES S_OBJ(150)
+/// Smooth group for grille windows
+#define SMOOTH_GROUP_GRILLE_WINDOWS S_OBJ(151)
