@@ -72,7 +72,7 @@
 	/// Is the stock extended or nah
 	var/stock_extended = TRUE
 
-/obj/item/gun/ballstic/automatic/sol_rifle/evil/Initialize(mapload)
+/obj/item/gun/ballistic/automatic/sol_rifle/evil/Initialize(mapload)
 	. = ..()
 	extend_stock()
 
