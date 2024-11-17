@@ -1,5 +1,5 @@
-/turf
-	vis_flags = VIS_INHERIT_PLANE
+//turf
+	//vis_flags = VIS_INHERIT_PLANE
 
 /turf/closed
 	plane = GAME_PLANE

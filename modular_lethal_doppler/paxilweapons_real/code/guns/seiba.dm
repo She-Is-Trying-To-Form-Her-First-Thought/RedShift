@@ -26,6 +26,8 @@
 	fire_delay = 0.18 SECONDS
 	spread = 7.5
 	muzzleflash_iconstate = "muzzle_flash_light"
+	/// Is the stock extended or nah
+	var/stock_extended = TRUE
 
 /obj/item/gun/ballistic/automatic/seiba_smg/Initialize(mapload)
 	. = ..()

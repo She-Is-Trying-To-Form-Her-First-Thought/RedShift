@@ -34,7 +34,6 @@
 /obj/item/gun/ballistic/automatic/sol_rifle/Initialize(mapload)
 	. = ..()
 	give_autofire()
-	extend_stock()
 
 /// Separate proc for handling auto fire just because one of these subtypes isn't otomatica
 /obj/item/gun/ballistic/automatic/sol_rifle/proc/give_autofire()
@@ -72,6 +71,10 @@
 	inhand_icon_state = "cawil_evil"
 	/// Is the stock extended or nah
 	var/stock_extended = TRUE
+
+/obj/item/gun/ballstic/automatic/sol_rifle/evil/Initialize(mapload)
+	. = ..()
+	extend_stock()
 
 /obj/item/gun/ballistic/automatic/sol_rifle/examine(mob/user)
 	. = ..()
