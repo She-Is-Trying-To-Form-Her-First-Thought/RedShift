@@ -1,0 +1,5 @@
+author: "Paxilmaniac"
+delete-after: True
+changes:
+  - balance: "Humans and humanlikes get 150 health now"
+  - bugfix: "Fixes the deathmatch map having the wrong baseturf"
