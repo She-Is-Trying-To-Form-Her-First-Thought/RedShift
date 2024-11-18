@@ -3,7 +3,8 @@
 	desc = "Sheets of metal-polymer alloys that protect the bare metal of the walls behind them from everyday activities."
 	icon = 'modular_lethal_doppler/wallem/icons/cladding.dmi'
 	icon_state = "basic_big"
-	SET_BASE_PIXEL(0, 7)
+	SET_BASE_PIXEL(0, 22)
+	layer = ABOVE_WINDOW_LAYER + 0.01
 	anchored = TRUE
 	density = FALSE
 	max_integrity = 200

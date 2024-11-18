@@ -1,0 +1,1866 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"ag" = (
+/obj/effect/light_emitter/thunderdome,
+/turf/open/floor/iron,
+/area/deathmatch)
+"aj" = (
+/obj/structure/window/spawner/directional/east,
+/turf/open/floor/iron/textured_large,
+/area/deathmatch)
+"aF" = (
+/obj/structure/maintenance_loot_structure/medbox/random,
+/turf/open/floor/iron/white,
+/area/deathmatch)
+"aI" = (
+/turf/open/chasm/true,
+/area/deathmatch)
+"aM" = (
+/obj/structure/railing{
+	dir = 1
+	},
+/turf/open/floor/iron,
+/area/deathmatch)
+"aO" = (
+/obj/structure/maintenance_loot_structure/military_case/random/rare_loot,
+/turf/open/floor/iron/white,
+/area/deathmatch)
+"aX" = (
+/obj/structure/table/glass,
+/obj/structure/maintenance_loot_structure/computer_tower/random,
+/turf/open/floor/iron/textured_large,
+/area/deathmatch)
+"bl" = (
+/obj/structure/table,
+/obj/effect/spawner/random/lethalstation_armor_set/gun_actually/lesbian_gun,
+/turf/open/floor/iron/dark,
+/area/deathmatch)
+"bm" = (
+/obj/structure/table/glass,
+/obj/structure/railing{
+	dir = 1
+	},
+/obj/effect/spawner/random/lethalstation_armor_set/peacekeeper_fake,
+/turf/open/floor/iron/textured_large,
+/area/deathmatch)
+"bR" = (
+/obj/structure/mineral_door/lethal/office{
+	dir = 4
+	},
+/turf/open/floor/iron/dark/diagonal,
+/area/deathmatch)
+"cR" = (
+/obj/structure/wall_cladding/tiled/security,
+/obj/structure/maintenance_loot_structure/grenade_box/random,
+/turf/open/floor/iron/dark,
+/area/deathmatch)
+"cY" = (
+/turf/closed/wall/r_wall,
+/area/deathmatch)
+"dV" = (
+/obj/effect/spawner/random/epic_loot/random_supply_crate,
+/turf/open/floor/iron/dark/side{
+	dir = 6
+	},
+/area/deathmatch)
+"ek" = (
+/obj/structure/table/glass,
+/obj/structure/window/spawner/directional/east,
+/turf/open/floor/iron/textured_large,
+/area/deathmatch)
+"em" = (
+/obj/effect/light_emitter/thunderdome,
+/turf/open/floor/iron/dark/side{
+	dir = 5
+	},
+/area/deathmatch)
+"eq" = (
+/obj/structure/wall_cladding/tiled/medical,
+/obj/effect/spawner/random/epic_loot/random_supply_crate,
+/turf/open/floor/iron/dark/side{
+	dir = 9
+	},
+/area/deathmatch)
+"eC" = (
+/obj/structure/table/glass,
+/turf/open/floor/iron/textured_large,
+/area/deathmatch)
+"eD" = (
+/turf/open/floor/iron/white,
+/area/deathmatch)
+"eL" = (
+/obj/structure/wall_cladding/tiled/security,
+/turf/open/floor/iron/dark/smooth_half{
+	dir = 4
+	},
+/area/deathmatch)
+"eO" = (
+/obj/structure/window/spawner/directional/west,
+/obj/structure/maintenance_loot_structure/military_case/random,
+/turf/open/floor/iron/textured_large,
+/area/deathmatch)
+"eP" = (
+/obj/structure/wall_cladding/service_panel,
+/obj/effect/light_emitter/thunderdome,
+/turf/open/floor/iron/dark/textured_large,
+/area/deathmatch)
+"eQ" = (
+/obj/structure/wall_cladding/tiled/medical,
+/obj/structure/maintenance_loot_structure/gun_box/random,
+/turf/open/floor/iron/dark,
+/area/deathmatch)
+"fp" = (
+/turf/open/floor/iron/dark/diagonal,
+/area/deathmatch)
+"fq" = (
+/obj/structure/maintenance_loot_structure/gun_box/random,
+/turf/open/floor/iron/textured_large,
+/area/deathmatch)
+"fE" = (
+/turf/open/floor/iron/diagonal,
+/area/deathmatch)
+"fJ" = (
+/obj/structure/table/glass,
+/obj/effect/spawner/random/lethalstation_armor_set/gun_actually/scoped_osako,
+/turf/open/floor/iron/textured_large,
+/area/deathmatch)
+"fW" = (
+/obj/structure/railing{
+	dir = 1
+	},
+/obj/effect/light_emitter/thunderdome,
+/turf/open/floor/iron/dark/textured_large,
+/area/deathmatch)
+"hb" = (
+/obj/structure/window_frame/reinforced/has_window,
+/turf/open/floor/plating,
+/area/deathmatch)
+"hp" = (
+/obj/structure/mineral_door/lethal{
+	dir = 4
+	},
+/turf/open/floor/iron/dark/diagonal,
+/area/deathmatch)
+"hB" = (
+/obj/effect/spawner/random/epic_loot/random_supply_crate,
+/turf/open/floor/plating,
+/area/deathmatch)
+"hG" = (
+/turf/open/floor/iron/dark/side{
+	dir = 4
+	},
+/area/deathmatch)
+"hH" = (
+/obj/structure/maintenance_loot_structure/large_crate/medical/airdrop,
+/turf/open/floor/iron/dark,
+/area/deathmatch)
+"hR" = (
+/obj/structure/wall_cladding/basic/medical,
+/turf/open/floor/iron/white,
+/area/deathmatch)
+"hY" = (
+/obj/effect/light_emitter/thunderdome,
+/turf/open/floor/iron/dark/side{
+	dir = 4
+	},
+/area/deathmatch)
+"il" = (
+/obj/effect/light_emitter/thunderdome,
+/turf/open/floor/iron/dark/side{
+	dir = 8
+	},
+/area/deathmatch)
+"ip" = (
+/obj/structure/maintenance_loot_structure/gun_box/random,
+/turf/open/floor/iron/dark,
+/area/deathmatch)
+"iE" = (
+/obj/effect/spawner/random/lethalstation_armor_set/peacekeeper,
+/obj/structure/table,
+/turf/open/floor/iron/dark,
+/area/deathmatch)
+"iH" = (
+/obj/effect/spawner/random/epic_loot/random_supply_crate,
+/turf/open/floor/iron/dark,
+/area/deathmatch)
+"iY" = (
+/obj/structure/table/glass,
+/obj/structure/window/spawner/directional/west,
+/obj/structure/wall_cladding/tiled/security,
+/turf/open/floor/iron/textured_large,
+/area/deathmatch)
+"jA" = (
+/obj/structure/window/spawner/directional/south,
+/obj/structure/window/spawner/directional/east,
+/turf/open/floor/iron/textured_large,
+/area/deathmatch)
+"jT" = (
+/obj/structure/maintenance_loot_structure/medbox/random/advanced_loot,
+/turf/open/floor/iron/white,
+/area/deathmatch)
+"kH" = (
+/obj/structure/railing{
+	dir = 1
+	},
+/turf/open/floor/iron/dark/side{
+	dir = 5
+	},
+/area/deathmatch)
+"kS" = (
+/obj/machinery/computer{
+	dir = 4
+	},
+/obj/structure/wall_cladding/tiled,
+/turf/open/floor/iron/textured_large,
+/area/deathmatch)
+"kW" = (
+/obj/effect/light_emitter/thunderdome,
+/turf/open/floor/iron/dark/side{
+	dir = 1
+	},
+/area/deathmatch)
+"ll" = (
+/obj/effect/light_emitter/thunderdome,
+/turf/open/floor/iron/dark/corner,
+/area/deathmatch)
+"lv" = (
+/obj/structure/lattice,
+/obj/structure/wall_cladding/basic,
+/turf/open/chasm/true,
+/area/deathmatch)
+"mb" = (
+/obj/effect/light_emitter/thunderdome,
+/turf/open/floor/iron/dark/side,
+/area/deathmatch)
+"mz" = (
+/obj/structure/wall_cladding/service_panel/security,
+/turf/open/floor/iron/dark/smooth_corner{
+	dir = 8
+	},
+/area/deathmatch)
+"mI" = (
+/obj/structure/mineral_door/lethal/office,
+/turf/open/floor/iron/dark/diagonal,
+/area/deathmatch)
+"mX" = (
+/obj/structure/railing{
+	dir = 1
+	},
+/turf/open/floor/iron/dark/side{
+	dir = 9
+	},
+/area/deathmatch)
+"np" = (
+/obj/structure/maintenance_loot_structure/file_cabinet/random,
+/turf/open/floor/iron/dark/textured_large,
+/area/deathmatch)
+"ns" = (
+/turf/open/floor/iron/white/diagonal,
+/area/deathmatch)
+"nC" = (
+/obj/structure/maintenance_loot_structure/large_crate/military,
+/turf/open/floor/iron/dark,
+/area/deathmatch)
+"nI" = (
+/obj/structure/mineral_door/lethal/industrial,
+/turf/open/floor/iron/dark/diagonal,
+/area/deathmatch)
+"oj" = (
+/obj/structure/maintenance_loot_structure/medbox/random,
+/obj/structure/wall_cladding/service_panel/medical,
+/turf/open/floor/iron/white,
+/area/deathmatch)
+"ok" = (
+/obj/structure/window/spawner/directional/west,
+/obj/structure/window/spawner/directional/south,
+/turf/open/floor/iron/textured_large,
+/area/deathmatch)
+"oF" = (
+/obj/structure/table/glass,
+/obj/effect/spawner/random/lethalstation_armor_set/koranda,
+/turf/open/floor/iron/textured_large,
+/area/deathmatch)
+"pd" = (
+/obj/structure/window/spawner/directional/south,
+/turf/open/floor/iron/textured_large,
+/area/deathmatch)
+"pr" = (
+/obj/structure/mystery_box/tdome,
+/turf/open/floor/iron/dark,
+/area/deathmatch)
+"pC" = (
+/obj/structure/mystery_box/tdome,
+/obj/structure/wall_cladding/basic/medical,
+/turf/open/floor/iron/white,
+/area/deathmatch)
+"pL" = (
+/obj/effect/light_emitter/thunderdome,
+/turf/open/floor/iron/dark/textured_large,
+/area/deathmatch)
+"pR" = (
+/obj/structure/window_frame/has_window,
+/turf/open/floor/plating,
+/area/deathmatch)
+"pS" = (
+/obj/structure/maintenance_loot_structure/military_case/random/rare_loot,
+/obj/structure/railing{
+	dir = 1
+	},
+/turf/open/floor/iron/dark,
+/area/deathmatch)
+"qa" = (
+/turf/closed/indestructible/riveted,
+/area/deathmatch)
+"qm" = (
+/obj/effect/landmark/deathmatch_player_spawn,
+/turf/open/floor/iron/dark/textured_large,
+/area/deathmatch)
+"qp" = (
+/obj/machinery/iv_drip/saline,
+/obj/structure/wall_cladding/tiled/medical,
+/turf/open/floor/iron/white,
+/area/deathmatch)
+"qR" = (
+/obj/structure/railing{
+	dir = 1
+	},
+/obj/effect/light_emitter/thunderdome,
+/turf/open/floor/iron/textured_large,
+/area/deathmatch)
+"rc" = (
+/obj/structure/window_frame/reinforced/has_window/plasma,
+/turf/open/floor/plating,
+/area/deathmatch)
+"rK" = (
+/turf/open/floor/iron/dark/smooth_edge{
+	dir = 4
+	},
+/area/deathmatch)
+"rW" = (
+/obj/effect/light_emitter/thunderdome,
+/turf/open/floor/plating,
+/area/deathmatch)
+"rY" = (
+/obj/effect/light_emitter/thunderdome,
+/turf/open/floor/iron/white/smooth_large,
+/area/deathmatch)
+"sd" = (
+/obj/structure/table/glass,
+/obj/structure/window/spawner/directional/south,
+/turf/open/floor/iron/textured_large,
+/area/deathmatch)
+"st" = (
+/turf/open/floor/iron/dark/smooth_half{
+	dir = 4
+	},
+/area/deathmatch)
+"tk" = (
+/obj/structure/maintenance_loot_structure/toolbox/random,
+/turf/open/floor/iron/dark/side{
+	dir = 4
+	},
+/area/deathmatch)
+"tt" = (
+/obj/structure/table,
+/obj/effect/spawner/random/lethalstation_armor_set/peacekeeper,
+/turf/open/floor/iron/dark,
+/area/deathmatch)
+"tG" = (
+/obj/structure/table/glass,
+/obj/structure/maintenance_loot_structure/computer_tower/random,
+/obj/structure/railing{
+	dir = 1
+	},
+/turf/open/floor/iron/textured_large,
+/area/deathmatch)
+"ub" = (
+/obj/structure/table/optable,
+/obj/structure/curtain,
+/obj/effect/spawner/random/lethalstation_armor_set/kuroba,
+/turf/open/floor/iron/white,
+/area/deathmatch)
+"uh" = (
+/obj/machinery/computer,
+/obj/structure/railing{
+	dir = 1
+	},
+/turf/open/floor/iron/textured_large,
+/area/deathmatch)
+"us" = (
+/obj/structure/wall_cladding/service_panel/security,
+/turf/open/floor/iron/dark,
+/area/deathmatch)
+"vi" = (
+/obj/structure/window/spawner/directional/west,
+/obj/structure/mystery_box/tdome,
+/turf/open/floor/iron/textured_large,
+/area/deathmatch)
+"vn" = (
+/obj/structure/table/glass,
+/obj/structure/window/spawner/directional/east,
+/obj/structure/wall_cladding/tiled/security,
+/turf/open/floor/iron/textured_large,
+/area/deathmatch)
+"vD" = (
+/obj/structure/mystery_box/tdome,
+/obj/structure/railing{
+	dir = 1
+	},
+/turf/open/floor/iron/dark,
+/area/deathmatch)
+"vJ" = (
+/obj/structure/mystery_box/tdome,
+/turf/open/floor/plating,
+/area/deathmatch)
+"vO" = (
+/obj/effect/light_emitter/thunderdome,
+/obj/effect/landmark/deathmatch_player_spawn,
+/turf/open/floor/iron/dark,
+/area/deathmatch)
+"vS" = (
+/obj/effect/light_emitter/thunderdome,
+/turf/open/floor/iron/dark,
+/area/deathmatch)
+"wh" = (
+/obj/machinery/iv_drip,
+/turf/open/floor/iron/white,
+/area/deathmatch)
+"wl" = (
+/obj/structure/table/glass,
+/obj/structure/maintenance_loot_structure/grenade_box/random,
+/turf/open/floor/iron/textured_large,
+/area/deathmatch)
+"wu" = (
+/obj/effect/landmark/deathmatch_player_spawn,
+/turf/open/floor/iron/textured_large,
+/area/deathmatch)
+"wz" = (
+/obj/structure/railing{
+	dir = 1
+	},
+/turf/open/floor/iron/dark,
+/area/deathmatch)
+"xa" = (
+/obj/structure/maintenance_loot_structure/file_cabinet/random,
+/turf/open/floor/iron/white,
+/area/deathmatch)
+"xG" = (
+/turf/open/floor/iron/dark/textured_large,
+/area/deathmatch)
+"xJ" = (
+/turf/open/floor/iron/dark/smooth_half{
+	dir = 1
+	},
+/area/deathmatch)
+"xK" = (
+/turf/open/floor/iron/dark,
+/area/deathmatch)
+"yl" = (
+/obj/structure/maintenance_loot_structure/toolbox/random,
+/turf/open/floor/plating,
+/area/deathmatch)
+"yQ" = (
+/turf/open/floor/iron/dark/corner{
+	dir = 4
+	},
+/area/deathmatch)
+"zd" = (
+/obj/structure/mineral_door/lethal/industrial{
+	dir = 4
+	},
+/turf/open/floor/iron/dark/diagonal,
+/area/deathmatch)
+"zB" = (
+/obj/effect/landmark/deathmatch_player_spawn,
+/turf/open/floor/plating,
+/area/deathmatch)
+"An" = (
+/turf/open/floor/iron,
+/area/deathmatch)
+"AY" = (
+/obj/structure/wall_cladding/tiled,
+/obj/structure/maintenance_loot_structure/grenade_box/random,
+/turf/open/floor/iron/dark,
+/area/deathmatch)
+"Br" = (
+/obj/structure/window/spawner/directional/north,
+/obj/structure/window/spawner/directional/west,
+/turf/open/floor/iron/textured_large,
+/area/deathmatch)
+"BE" = (
+/obj/structure/mineral_door/lethal/office{
+	dir = 1
+	},
+/turf/open/floor/iron/dark/diagonal,
+/area/deathmatch)
+"CX" = (
+/turf/open/floor/iron/dark/side{
+	dir = 10
+	},
+/area/deathmatch)
+"Dl" = (
+/obj/structure/maintenance_loot_structure/desk_safe/random,
+/obj/structure/railing{
+	dir = 1
+	},
+/turf/open/floor/iron/textured_large,
+/area/deathmatch)
+"Dp" = (
+/turf/open/floor/iron/dark/side{
+	dir = 1
+	},
+/area/deathmatch)
+"DC" = (
+/turf/open/floor/iron/dark/side{
+	dir = 8
+	},
+/area/deathmatch)
+"DF" = (
+/obj/structure/wall_cladding/tiled/security,
+/turf/open/floor/iron,
+/area/deathmatch)
+"DM" = (
+/obj/structure/maintenance_loot_structure/file_cabinet/random,
+/obj/structure/railing{
+	dir = 1
+	},
+/turf/open/floor/iron/textured_large,
+/area/deathmatch)
+"Ef" = (
+/obj/machinery/computer{
+	dir = 8
+	},
+/obj/structure/window/spawner/directional/north,
+/turf/open/floor/iron/textured_large,
+/area/deathmatch)
+"Eh" = (
+/obj/structure/maintenance_loot_structure/military_case/random,
+/obj/structure/railing{
+	dir = 1
+	},
+/turf/open/floor/plating,
+/area/deathmatch)
+"EQ" = (
+/turf/open/floor/plating,
+/area/deathmatch)
+"Fo" = (
+/obj/structure/table/glass,
+/obj/structure/maintenance_loot_structure/register/random,
+/turf/open/floor/iron/textured_large,
+/area/deathmatch)
+"Ga" = (
+/obj/structure/table/glass,
+/obj/structure/wall_cladding/tiled,
+/obj/effect/spawner/random/lethalstation_armor_set/gun_actually/kurwa,
+/turf/open/floor/iron/textured_large,
+/area/deathmatch)
+"Gb" = (
+/obj/structure/mineral_door/lethal/standard,
+/turf/open/floor/iron/dark/diagonal,
+/area/deathmatch)
+"Gg" = (
+/obj/structure/maintenance_loot_structure/toolbox/random,
+/turf/open/floor/iron/dark/textured_large,
+/area/deathmatch)
+"Go" = (
+/obj/structure/window/spawner/directional/west,
+/turf/open/floor/iron/textured_large,
+/area/deathmatch)
+"Gp" = (
+/obj/structure/table/glass,
+/obj/effect/spawner/random/lethalstation_armor_set/gun_actually/super_shotgun,
+/turf/open/floor/iron/textured_large,
+/area/deathmatch)
+"GF" = (
+/obj/structure/wall_cladding/service_panel/security,
+/turf/open/floor/iron,
+/area/deathmatch)
+"Hd" = (
+/obj/structure/wall_cladding/service_panel/medical,
+/obj/structure/maintenance_loot_structure/large_crate,
+/turf/open/floor/iron/dark,
+/area/deathmatch)
+"Hl" = (
+/obj/structure/lattice,
+/turf/open/chasm/true,
+/area/deathmatch)
+"Ho" = (
+/obj/structure/railing{
+	dir = 1
+	},
+/turf/open/floor/iron/dark/side{
+	dir = 8
+	},
+/area/deathmatch)
+"Hq" = (
+/obj/structure/mystery_box/tdome,
+/obj/structure/railing{
+	dir = 1
+	},
+/turf/open/floor/iron/textured_large,
+/area/deathmatch)
+"Ia" = (
+/obj/effect/light_emitter/thunderdome,
+/turf/open/floor/iron/dark/side{
+	dir = 10
+	},
+/area/deathmatch)
+"Ig" = (
+/obj/structure/window_frame/has_window/grille_window,
+/turf/open/floor/plating,
+/area/deathmatch)
+"IB" = (
+/obj/structure/maintenance_loot_structure/large_crate/medical,
+/obj/structure/wall_cladding/basic/medical,
+/turf/open/floor/iron/white,
+/area/deathmatch)
+"IG" = (
+/obj/structure/wall_cladding/tiled/security,
+/turf/open/floor/iron/textured_large,
+/area/deathmatch)
+"IH" = (
+/obj/structure/wall_cladding/tiled/medical,
+/obj/effect/spawner/random/epic_loot/random_supply_crate,
+/turf/open/floor/iron/dark/side{
+	dir = 5
+	},
+/area/deathmatch)
+"IJ" = (
+/obj/structure/mineral_door/lethal/standard{
+	dir = 4
+	},
+/turf/open/floor/iron/dark/diagonal,
+/area/deathmatch)
+"IY" = (
+/obj/structure/maintenance_loot_structure/medbox/random/advanced_loot,
+/turf/open/floor/iron/dark,
+/area/deathmatch)
+"Jc" = (
+/obj/structure/maintenance_loot_structure/gun_box/random,
+/turf/open/floor/iron/white,
+/area/deathmatch)
+"Jg" = (
+/obj/structure/wall_cladding/tiled/medical,
+/turf/open/floor/iron/white,
+/area/deathmatch)
+"Jm" = (
+/obj/structure/window/spawner/directional/north,
+/obj/structure/mystery_box/tdome,
+/turf/open/floor/iron/textured_large,
+/area/deathmatch)
+"Jq" = (
+/turf/open/floor/iron/dark/smooth_half,
+/area/deathmatch)
+"Ku" = (
+/obj/structure/railing{
+	dir = 1
+	},
+/turf/open/floor/iron/dark/side{
+	dir = 4
+	},
+/area/deathmatch)
+"KU" = (
+/obj/structure/mineral_door/lethal,
+/turf/open/floor/iron/dark/diagonal,
+/area/deathmatch)
+"KX" = (
+/obj/machinery/computer{
+	dir = 4
+	},
+/turf/open/floor/iron/textured_large,
+/area/deathmatch)
+"Ld" = (
+/obj/effect/light_emitter/thunderdome,
+/turf/open/floor/iron/textured_large,
+/area/deathmatch)
+"Lh" = (
+/obj/structure/window/spawner/directional/south,
+/obj/structure/window/spawner/directional/west,
+/turf/open/floor/iron/textured_large,
+/area/deathmatch)
+"Ly" = (
+/obj/effect/landmark/deathmatch_player_spawn,
+/turf/open/floor/iron/dark/side{
+	dir = 4
+	},
+/area/deathmatch)
+"LK" = (
+/obj/structure/wall_cladding/tiled/security,
+/obj/structure/mystery_box/tdome,
+/turf/open/floor/iron/dark,
+/area/deathmatch)
+"LL" = (
+/obj/effect/landmark/deathmatch_player_spawn,
+/turf/open/floor/iron/white,
+/area/deathmatch)
+"Mg" = (
+/obj/structure/mystery_box/tdome,
+/turf/open/floor/iron/textured_large,
+/area/deathmatch)
+"Ml" = (
+/obj/structure/maintenance_loot_structure/military_case/random/rare_loot,
+/turf/open/floor/plating,
+/area/deathmatch)
+"ME" = (
+/obj/structure/railing{
+	dir = 1
+	},
+/turf/open/floor/iron/dark/textured_large,
+/area/deathmatch)
+"MF" = (
+/obj/structure/wall_cladding/service_panel,
+/obj/structure/mystery_box/tdome,
+/turf/open/floor/iron/textured_large,
+/area/deathmatch)
+"ML" = (
+/obj/structure/window/spawner/directional/north,
+/obj/structure/window/spawner/directional/east,
+/turf/open/floor/iron/textured_large,
+/area/deathmatch)
+"MS" = (
+/obj/structure/table/optable,
+/obj/structure/curtain,
+/turf/open/floor/iron/white,
+/area/deathmatch)
+"MX" = (
+/obj/structure/table/glass,
+/obj/structure/maintenance_loot_structure/computer_tower/random,
+/obj/structure/wall_cladding/basic/security,
+/turf/open/floor/iron/textured_large,
+/area/deathmatch)
+"Nb" = (
+/turf/open/floor/iron/dark/smooth_edge{
+	dir = 8
+	},
+/area/deathmatch)
+"Nn" = (
+/obj/structure/wall_cladding/service_panel/security,
+/obj/effect/spawner/random/epic_loot/random_supply_crate,
+/turf/open/floor/iron/dark,
+/area/deathmatch)
+"Nw" = (
+/obj/structure/table/glass,
+/obj/effect/spawner/random/lethalstation_armor_set/gun_actually/signalis_real,
+/turf/open/floor/iron/textured_large,
+/area/deathmatch)
+"Oa" = (
+/obj/machinery/computer{
+	dir = 8
+	},
+/turf/open/floor/iron/textured_large,
+/area/deathmatch)
+"Ou" = (
+/obj/structure/maintenance_loot_structure/toolbox/random,
+/turf/open/floor/iron/dark/side,
+/area/deathmatch)
+"OJ" = (
+/obj/structure/wall_cladding/basic/security,
+/turf/open/floor/iron,
+/area/deathmatch)
+"OS" = (
+/obj/structure/maintenance_loot_structure/military_case/random/rare_loot,
+/turf/open/floor/iron/textured_large,
+/area/deathmatch)
+"Pd" = (
+/obj/structure/maintenance_loot_structure/large_crate/military/rare_loot,
+/turf/open/floor/iron/dark,
+/area/deathmatch)
+"QA" = (
+/obj/structure/maintenance_loot_structure/military_case/random,
+/obj/structure/railing{
+	dir = 1
+	},
+/turf/open/floor/iron/dark,
+/area/deathmatch)
+"Rq" = (
+/obj/structure/window/spawner/directional/east,
+/obj/structure/window/spawner/directional/north,
+/turf/open/floor/iron/textured_large,
+/area/deathmatch)
+"RE" = (
+/turf/open/floor/iron/dark/side,
+/area/deathmatch)
+"RN" = (
+/obj/structure/wall_cladding/basic/medical,
+/obj/structure/maintenance_loot_structure/grenade_box/random,
+/turf/open/floor/iron/white,
+/area/deathmatch)
+"Sn" = (
+/obj/effect/spawner/random/epic_loot/random_supply_crate,
+/turf/open/floor/iron/textured_large,
+/area/deathmatch)
+"St" = (
+/obj/structure/wall_cladding/service_panel/medical,
+/turf/open/floor/iron/dark/side{
+	dir = 1
+	},
+/area/deathmatch)
+"SH" = (
+/obj/structure/table/glass,
+/obj/effect/spawner/random/lethalstation_armor_set/peacekeeper_fake,
+/turf/open/floor/iron/textured_large,
+/area/deathmatch)
+"SP" = (
+/obj/structure/maintenance_loot_structure/large_crate/engineering/airdrop,
+/turf/open/floor/iron/dark,
+/area/deathmatch)
+"ST" = (
+/obj/structure/mystery_box/tdome,
+/turf/open/floor/iron/white,
+/area/deathmatch)
+"SZ" = (
+/obj/structure/railing{
+	dir = 1
+	},
+/obj/effect/spawner/random/epic_loot/random_supply_crate,
+/turf/open/floor/iron/textured_large,
+/area/deathmatch)
+"TC" = (
+/obj/structure/maintenance_loot_structure/large_crate/medical/airdrop,
+/turf/open/floor/iron/white,
+/area/deathmatch)
+"TN" = (
+/turf/open/floor/iron/white/smooth_large,
+/area/deathmatch)
+"Um" = (
+/obj/effect/light_emitter/thunderdome,
+/obj/effect/landmark/deathmatch_player_spawn,
+/turf/open/floor/iron/textured_large,
+/area/deathmatch)
+"Un" = (
+/obj/structure/maintenance_loot_structure/file_cabinet/random,
+/turf/open/floor/iron/textured_large,
+/area/deathmatch)
+"Uq" = (
+/obj/structure/maintenance_loot_structure/gun_box/random,
+/obj/structure/railing{
+	dir = 1
+	},
+/turf/open/floor/iron/dark,
+/area/deathmatch)
+"Uu" = (
+/obj/effect/landmark/deathmatch_player_spawn,
+/turf/open/floor/iron/dark,
+/area/deathmatch)
+"Uv" = (
+/obj/machinery/computer{
+	dir = 8
+	},
+/obj/structure/window/spawner/directional/south,
+/turf/open/floor/iron/textured_large,
+/area/deathmatch)
+"Va" = (
+/obj/structure/railing{
+	dir = 1
+	},
+/turf/open/floor/iron/textured_large,
+/area/deathmatch)
+"We" = (
+/turf/open/floor/iron/dark/smooth_half{
+	dir = 8
+	},
+/area/deathmatch)
+"WW" = (
+/turf/open/floor/iron/dark/side{
+	dir = 9
+	},
+/area/deathmatch)
+"XF" = (
+/obj/structure/maintenance_loot_structure/grenade_box/random,
+/turf/open/floor/iron/white,
+/area/deathmatch)
+"XG" = (
+/obj/structure/table/glass,
+/obj/structure/window/spawner/directional/west,
+/turf/open/floor/iron/textured_large,
+/area/deathmatch)
+"XI" = (
+/obj/structure/wall_cladding/tiled/medical,
+/turf/open/floor/iron/dark/side{
+	dir = 1
+	},
+/area/deathmatch)
+"XP" = (
+/turf/open/floor/iron/textured_large,
+/area/deathmatch)
+"XS" = (
+/turf/open/floor/iron/dark/side{
+	dir = 5
+	},
+/area/deathmatch)
+"YT" = (
+/turf/open/floor/iron/dark/side{
+	dir = 6
+	},
+/area/deathmatch)
+"ZJ" = (
+/obj/effect/light_emitter/thunderdome,
+/obj/effect/landmark/deathmatch_player_spawn,
+/turf/open/floor/iron/dark/textured_large,
+/area/deathmatch)
+"ZS" = (
+/obj/structure/railing{
+	dir = 1
+	},
+/turf/open/floor/plating,
+/area/deathmatch)
+
+(1,1,1) = {"
+qa
+qa
+qa
+qa
+qa
+qa
+qa
+qa
+qa
+qa
+qa
+qa
+qa
+qa
+qa
+qa
+qa
+qa
+qa
+qa
+qa
+qa
+qa
+qa
+qa
+qa
+qa
+qa
+qa
+qa
+"}
+(2,1,1) = {"
+qa
+wz
+rK
+rK
+xK
+rK
+rK
+xK
+cY
+Uq
+qm
+nC
+cY
+cR
+xG
+Pd
+cY
+eQ
+qm
+hH
+cY
+AY
+SP
+cY
+pS
+iE
+cY
+QA
+pr
+qa
+"}
+(3,1,1) = {"
+qa
+wz
+vJ
+EQ
+xK
+yl
+EQ
+xK
+nI
+xK
+xG
+ip
+cY
+us
+xG
+nC
+cY
+Hd
+xG
+IY
+cY
+eP
+xG
+nI
+pL
+xG
+nI
+pL
+qm
+qa
+"}
+(4,1,1) = {"
+qa
+wz
+hB
+rW
+xK
+rW
+vJ
+xK
+cY
+mX
+DC
+DC
+DC
+DC
+DC
+DC
+DC
+DC
+DC
+DC
+CX
+xK
+xK
+cY
+vD
+xK
+cY
+cY
+cY
+qa
+"}
+(5,1,1) = {"
+qa
+wz
+EQ
+zB
+xK
+hB
+hB
+xK
+nI
+Dp
+ag
+An
+An
+An
+ag
+An
+An
+An
+ag
+An
+RE
+cY
+Ig
+cY
+cY
+cY
+cY
+wz
+iH
+qa
+"}
+(6,1,1) = {"
+qa
+wz
+Nb
+Nb
+xK
+Nb
+Nb
+xK
+cY
+kH
+hG
+hG
+hG
+hG
+hG
+hG
+hG
+hG
+tk
+hG
+YT
+nI
+pL
+Gb
+pL
+nI
+xG
+pL
+iH
+qa
+"}
+(7,1,1) = {"
+qa
+wz
+xK
+Un
+oF
+aX
+Oa
+eC
+cY
+cY
+cY
+zd
+cY
+cY
+np
+np
+Gg
+cY
+cY
+zd
+cY
+cY
+wz
+cY
+wz
+cY
+wz
+xG
+xK
+qa
+"}
+(8,1,1) = {"
+qa
+cY
+zd
+cY
+cY
+cY
+cY
+cY
+cY
+OJ
+cY
+fW
+xK
+cY
+cY
+cY
+cY
+cY
+vD
+pL
+xK
+cY
+cY
+cY
+cY
+cY
+cY
+zd
+cY
+qa
+"}
+(9,1,1) = {"
+qa
+ZS
+xK
+yl
+cY
+MX
+KX
+Fo
+rc
+An
+cY
+zd
+cY
+cY
+DC
+DC
+DC
+cY
+cY
+zd
+cY
+cY
+lv
+Hl
+Hl
+Ig
+pr
+xG
+xK
+qa
+"}
+(10,1,1) = {"
+qa
+Eh
+vO
+EQ
+cY
+IG
+XP
+fJ
+rc
+ag
+An
+DC
+An
+An
+hY
+An
+An
+An
+An
+il
+Ou
+Ig
+aI
+aI
+aI
+Ig
+bl
+pL
+iH
+qa
+"}
+(11,1,1) = {"
+qa
+cY
+cY
+EQ
+cY
+eL
+Rq
+ek
+cY
+DF
+hb
+hb
+hb
+cY
+IJ
+cY
+hb
+hb
+hb
+An
+RE
+Ig
+aI
+aI
+aI
+Ig
+tt
+xG
+xK
+qa
+"}
+(12,1,1) = {"
+qa
+ZS
+vS
+EQ
+cY
+mz
+vS
+We
+mI
+Dp
+hb
+aX
+KX
+sd
+Jq
+Jm
+KX
+aX
+hb
+An
+RE
+Ig
+aI
+aI
+cY
+cY
+pR
+fp
+pR
+qa
+"}
+(13,1,1) = {"
+qa
+ZS
+xK
+vJ
+cY
+DM
+st
+cY
+cY
+GF
+hb
+Fo
+Um
+jA
+Jq
+ML
+Ld
+Fo
+hb
+An
+cY
+cY
+lv
+Hl
+cY
+LK
+xK
+xG
+xK
+qa
+"}
+(14,1,1) = {"
+qa
+ZS
+cY
+cY
+cY
+Hq
+st
+rc
+Dp
+An
+cY
+vn
+aj
+xG
+Jq
+xG
+aj
+aj
+cY
+DF
+RE
+Ig
+aI
+aI
+pR
+ip
+xK
+xG
+xK
+qa
+"}
+(15,1,1) = {"
+qa
+ZS
+vO
+Ml
+cY
+DM
+st
+rc
+Dp
+mb
+Gb
+xJ
+xJ
+xJ
+xK
+xJ
+xJ
+xJ
+Gb
+kW
+RE
+Ig
+aI
+aI
+pR
+xK
+Uu
+pL
+xK
+qa
+"}
+(16,1,1) = {"
+qa
+cY
+zd
+cY
+cY
+cY
+cY
+cY
+cY
+OJ
+cY
+iY
+Go
+xG
+Jq
+xG
+Go
+XG
+cY
+GF
+RE
+Ig
+aI
+aI
+pR
+xK
+xK
+xG
+xK
+qa
+"}
+(17,1,1) = {"
+qa
+aM
+DC
+ll
+hG
+hG
+hG
+hG
+hG
+yQ
+hb
+Mg
+Ld
+Lh
+Jq
+Br
+Um
+eC
+hb
+An
+cY
+cY
+lv
+Hl
+cY
+Nn
+xK
+xG
+iH
+qa
+"}
+(18,1,1) = {"
+qa
+cY
+cY
+cY
+eO
+vi
+Go
+Go
+ok
+Dp
+hb
+eC
+aX
+Uv
+Jq
+Ef
+aX
+Fo
+hb
+An
+RE
+Ig
+aI
+aI
+cY
+cY
+pR
+fp
+pR
+qa
+"}
+(19,1,1) = {"
+qa
+tG
+Gp
+XS
+hG
+hG
+Ly
+yQ
+pd
+Dp
+hb
+hb
+hb
+cY
+IJ
+cY
+hb
+hb
+hb
+An
+RE
+Ig
+aI
+aI
+aI
+Ig
+iH
+xG
+xK
+qa
+"}
+(20,1,1) = {"
+qa
+uh
+WW
+DC
+DC
+Ia
+xK
+Dp
+pd
+kW
+hG
+An
+An
+An
+il
+An
+An
+An
+An
+ag
+RE
+Ig
+aI
+aI
+aI
+Ig
+xK
+pL
+xK
+qa
+"}
+(21,1,1) = {"
+qa
+bm
+xK
+hG
+hG
+xK
+iH
+cY
+cY
+Ig
+hp
+cY
+cY
+cY
+cY
+cY
+cY
+cY
+Ig
+fE
+cY
+cY
+lv
+Hl
+Hl
+Ig
+pr
+xG
+xK
+qa
+"}
+(22,1,1) = {"
+qa
+wz
+xK
+DC
+DC
+xK
+iH
+cY
+pC
+eD
+TN
+XF
+cY
+IB
+xa
+xa
+cY
+eq
+DC
+XP
+cY
+aI
+aI
+cY
+cY
+cY
+cY
+zd
+cY
+qa
+"}
+(23,1,1) = {"
+qa
+Hq
+em
+hG
+hG
+YT
+xK
+KU
+TN
+rY
+TN
+TN
+ns
+TN
+rY
+TN
+KU
+XP
+XP
+XP
+cY
+Ig
+Ig
+cY
+wz
+cY
+wz
+xG
+xK
+qa
+"}
+(24,1,1) = {"
+qa
+Dl
+xK
+xK
+Un
+Un
+Un
+cY
+RN
+eD
+Jc
+aO
+cY
+hR
+TN
+eD
+cY
+XI
+Ld
+Ig
+cY
+qR
+XP
+nI
+pL
+nI
+xG
+pL
+xK
+qa
+"}
+(25,1,1) = {"
+qa
+cY
+cY
+bR
+cY
+cY
+cY
+cY
+cY
+cY
+cY
+cY
+cY
+cY
+ns
+cY
+cY
+cY
+Va
+XP
+XP
+XP
+dV
+cY
+cY
+cY
+cY
+ME
+ip
+qa
+"}
+(26,1,1) = {"
+qa
+SZ
+OS
+xG
+fq
+OS
+OS
+xK
+cY
+qp
+MS
+wh
+ub
+jT
+TN
+TC
+cY
+XI
+XP
+YT
+cY
+cY
+cY
+cY
+kS
+aX
+cY
+bR
+cY
+qa
+"}
+(27,1,1) = {"
+qa
+Va
+xG
+pL
+xG
+xG
+pL
+xG
+BE
+TN
+rY
+TN
+TN
+rY
+TN
+TN
+KU
+XP
+Ld
+cY
+cY
+Ho
+cY
+Ga
+wu
+SH
+xK
+xG
+Mg
+qa
+"}
+(28,1,1) = {"
+qa
+cY
+bR
+cY
+cY
+Va
+XP
+wl
+cY
+Jg
+eD
+eD
+eD
+eD
+eD
+eD
+cY
+St
+XP
+BE
+XP
+Ld
+BE
+xG
+xG
+pL
+xG
+xG
+Un
+qa
+"}
+(29,1,1) = {"
+qa
+vD
+ZJ
+iH
+cY
+tG
+Oa
+Nw
+cY
+oj
+LL
+ST
+aF
+MS
+eD
+cY
+cY
+IH
+hG
+cY
+Ku
+hG
+cY
+MF
+XP
+Sn
+Un
+xK
+Un
+qa
+"}
+(30,1,1) = {"
+qa
+qa
+qa
+qa
+qa
+qa
+qa
+qa
+qa
+qa
+qa
+qa
+qa
+qa
+qa
+qa
+qa
+qa
+qa
+qa
+qa
+qa
+qa
+qa
+qa
+qa
+qa
+qa
+qa
+qa
+"}

@@ -7309,6 +7309,7 @@
 #include "modular_lethal_doppler\tgmc_debris\code\gun_particles.dm"
 #include "modular_lethal_doppler\tgmc_debris\code\object_edits.dm"
 #include "modular_lethal_doppler\tgmc_debris\code\particle_types.dm"
+#include "modular_lethal_doppler\wallem\code\deathmatch_for_some_reason.dm"
 #include "modular_lethal_doppler\wallem\code\floor_tiles.dm"
 #include "modular_lethal_doppler\wallem\code\icon_replacements.dm"
 #include "modular_lethal_doppler\wallem\code\super_doors.dm"

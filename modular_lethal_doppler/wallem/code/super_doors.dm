@@ -15,6 +15,7 @@
 /obj/structure/mineral_door/lethal
 	icon = 'modular_lethal_doppler/wallem/icons/mineral_doors.dmi'
 	icon_state = "standard"
+	layer = ABOVE_WINDOW_LAYER + 0.01
 	has_bottom_bit = TRUE
 	close_delay = 30 SECONDS
 	openSound = 'modular_lethal_doppler/wallem/sounds/door_open.ogg'
