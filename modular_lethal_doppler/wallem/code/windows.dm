@@ -239,3 +239,9 @@
 	if(fulltile)
 		return ..()
 	smoothing_junction = new_junction
+
+/obj/structure/window/plasma
+	icon = 'icons/obj/structures.dmi'
+
+/obj/structure/window/reinforced
+	icon = 'icons/obj/structures.dmi'

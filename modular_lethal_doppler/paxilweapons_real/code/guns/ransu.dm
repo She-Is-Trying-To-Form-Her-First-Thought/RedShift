@@ -13,6 +13,7 @@
 	rack_sound = 'modular_lethal_doppler/paxilweapons_real/sound/ransu/ransu_rack.wav'
 	fire_sound = 'modular_lethal_doppler/paxilweapons_real/sound/ransu/ransu.wav'
 	suppressed_sound = 'modular_lethal_doppler/paxilweapons_real/sound/ransu/ransu.wav'
+	special_mags = FALSE
 	can_suppress = TRUE
 	can_unsuppress = FALSE
 	fire_delay = 1.5 SECONDS
