@@ -33,22 +33,24 @@
 
 /obj/structure/mineral_door/lethal/attack_hand_secondary(mob/user, list/modifiers)
 	. = ..()
-	if(.)
+	if(. == SECONDARY_ATTACK_CANCEL_ATTACK_CHAIN)
 		return
 	if(door_opened)
-		return
+		return SECONDARY_ATTACK_CANCEL_ATTACK_CHAIN
 	if(!do_after(user, 0.5 SECONDS, src))
-		return
-	if(!rand(door_kick_chance))
+		return SECONDARY_ATTACK_CANCEL_ATTACK_CHAIN
+	if(!prob(door_kick_chance))
 		playsound(src, kick_fail_sound, 100, TRUE, 3)
+		return SECONDARY_ATTACK_CANCEL_ATTACK_CHAIN
 	else
 		Open(TRUE)
+		return SECONDARY_ATTACK_CANCEL_ATTACK_CHAIN
 
 /obj/structure/mineral_door/lethal/TryToSwitchState(atom/user)
 	if(isliving(user))
 		if(!can_interact(user))
 			return
-		if(!do_after(user, 3 SECONDS, src))
+		if(!do_after(user, 2 SECONDS, src))
 			return
 		SwitchState()
 	else if(ismecha(user))

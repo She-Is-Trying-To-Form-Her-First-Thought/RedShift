@@ -16,7 +16,7 @@
 	icon = 'icons/icon_cutter_deez/windows/grille_window.dmi'
 	icon_state = "grille_window-0"
 	base_icon_state = "grille_window"
-	plane = ABOVE_GAME_PLANE
+	plane = GAME_PLANE
 	layer = ABOVE_OBJ_LAYER + 0.01
 	smoothing_flags = SMOOTH_BITMASK
 	smoothing_groups = SMOOTH_GROUP_GRILLE_WINDOWS
