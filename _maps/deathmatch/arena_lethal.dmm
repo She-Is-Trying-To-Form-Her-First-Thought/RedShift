@@ -592,6 +592,10 @@
 	},
 /turf/open/floor/iron/textured_large,
 /area/deathmatch)
+"HH" = (
+/obj/effect/baseturf_helper/virtual_domain,
+/turf/closed/wall/r_wall,
+/area/deathmatch)
 "Ia" = (
 /obj/machinery/light/floor,
 /turf/open/floor/iron/dark/side{
@@ -1019,7 +1023,7 @@ vD
 xK
 cY
 cY
-cY
+HH
 qa
 "}
 (5,1,1) = {"
