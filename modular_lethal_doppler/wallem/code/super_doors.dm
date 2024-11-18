@@ -46,7 +46,6 @@
 
 /obj/structure/mineral_door/lethal/TryToSwitchState(atom/user)
 	if(isliving(user))
-		var/mob/living/matters = user
 		if(!can_interact(user))
 			return
 		if(!do_after(user, 3 SECONDS, src))

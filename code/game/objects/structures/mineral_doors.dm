@@ -138,7 +138,7 @@
 	if(has_bottom_bit) // DOPPLETHAL EDIT ADD
 		icon_state = "[initial(icon_state)][door_opened ? "open_top":""]" // DOPPLETHAL EDIT ADD
 	else // DOPPLETHAL EDIT ADD
-	icon_state = "[initial(icon_state)][door_opened ? "open":""]"
+		icon_state = "[initial(icon_state)][door_opened ? "open":""]" // DOPPLETHAL EDIT (JUST REMOVE THE TAB)
 	return ..()
 
 /obj/structure/mineral_door/attackby(obj/item/I, mob/living/user)
