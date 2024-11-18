@@ -3,7 +3,7 @@
 	desc = "A simulated section of sector nine, used by many gakster companies for training before cache raids."
 	max_players = 13
 	allowed_loadouts = list(
-		/datum/outfit/deathmatch_loadout/operative,
+		/datum/outfit/deathmatch_loadout/gakster,
 	)
 	map_name = "arena_lethal"
 	key = "arena_lethal"
