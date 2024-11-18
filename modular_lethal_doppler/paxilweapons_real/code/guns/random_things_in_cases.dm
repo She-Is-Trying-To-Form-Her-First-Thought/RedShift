@@ -71,11 +71,11 @@
 /obj/item/gun/ballistic/shotgun/riot/sol/thunderdome
 	accepted_magazine_type = /obj/item/ammo_box/magazine/internal/shot/riot/sol_thunderdome
 
-/obj/item/ammo_box/magazine/internal/shot/riot/sol_thunderdome
+/obj/item/ammo_box/magazine/internal/shot/riot/sol/thunderdome
 	ammo_type = /obj/item/ammo_casing/lethal_s12gauge
 
 /obj/item/gun/ballistic/shotgun/riot/sol/evil/thunderdome
 	accepted_magazine_type = /obj/item/ammo_box/magazine/internal/shot/riot/sol_thunderdome/evil
 
-/obj/item/ammo_box/magazine/internal/shot/riot/sol_thunderdome/evil
+/obj/item/ammo_box/magazine/internal/shot/riot/sol/thunderdome/evil
 	ammo_type = /obj/item/ammo_casing/lethal_s12gauge/flechette
