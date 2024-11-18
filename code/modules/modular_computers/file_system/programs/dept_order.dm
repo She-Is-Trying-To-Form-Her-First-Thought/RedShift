@@ -51,7 +51,7 @@
 	download_access |= linked_department_real?.head_of_staff_access // DOPPLETHAL EDIT - download_access |= linked_department_real.head_of_staff_access
 	// Heads of staff + anyone in the dept can run it
 	use_access |= linked_department_real?.head_of_staff_access // DOPPLETHAL EDIT - use_access |= linked_department_real.head_of_staff_access
-	use_access |= linked_department_real.department_access
+	use_access |= linked_department_real?.department_access // DOPPLETHAL EDIT - use_access |= linked_department_real.department_access
 	// Also set up the radio
 	if(dept_to_radio[linked_department])
 		if(!isnull(radio))
