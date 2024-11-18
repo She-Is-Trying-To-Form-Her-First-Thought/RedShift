@@ -135,7 +135,10 @@
 	isSwitchingStates = FALSE
 
 /obj/structure/mineral_door/update_icon_state()
-	icon_state = "[initial(icon_state)][door_opened ? "open":""]"
+	if(has_bottom_bit) // DOPPLETHAL EDIT ADD
+		icon_state = "[initial(icon_state)][door_opened ? "_open_top":""]" // DOPPLETHAL EDIT ADD
+	else // DOPPLETHAL EDIT ADD
+		icon_state = "[initial(icon_state)][door_opened ? "open":""]" // DOPPLETHAL EDIT (JUST REMOVE THE TAB)
 	return ..()
 
 /obj/structure/mineral_door/attackby(obj/item/I, mob/living/user)
