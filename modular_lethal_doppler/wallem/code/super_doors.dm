@@ -72,7 +72,9 @@
 /// Finds everyone in the telegraph turf and throws them across the room
 /obj/structure/mineral_door/lethal/proc/chief_kickabitch_from_the_casino(mob/user, turf/telegraph_turf)
 	var/turf/throwtarget = get_edge_target_turf(src, get_dir(src, telegraph_turf))
-	for(var/atom/kicked_thing as anything in telegraph_turf.contents)
+	for(var/atom/movable/kicked_thing as anything in telegraph_turf.contents)
+		if(isturf(kicked_thing))
+			continue
 		if(kicked_thing.anchored)
 			continue
 		if(isliving(kicked_thing))
