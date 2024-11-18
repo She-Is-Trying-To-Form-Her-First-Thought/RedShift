@@ -7192,6 +7192,7 @@
 #include "modular_lethal_doppler\armor_but_cool\code\armor_types\ultra_larp.dm"
 #include "modular_lethal_doppler\combat_things\code\deafness_limit.dm"
 #include "modular_lethal_doppler\combat_things\code\fire_adjustment.dm"
+#include "modular_lethal_doppler\combat_things\code\human_health_max.dm"
 #include "modular_lethal_doppler\cool_implants\code\augments_arms.dm"
 #include "modular_lethal_doppler\cool_implants\code\augments_head.dm"
 #include "modular_lethal_doppler\deepmaint_stuff\code\areas_n_shit.dm"
