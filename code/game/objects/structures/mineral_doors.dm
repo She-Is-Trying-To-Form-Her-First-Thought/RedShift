@@ -135,6 +135,9 @@
 	isSwitchingStates = FALSE
 
 /obj/structure/mineral_door/update_icon_state()
+	if(has_bottom_bit) // DOPPLETHAL EDIT ADD
+		icon_state = "[initial(icon_state)][door_opened ? "open_top":""]" // DOPPLETHAL EDIT ADD
+	else // DOPPLETHAL EDIT ADD
 	icon_state = "[initial(icon_state)][door_opened ? "open":""]"
 	return ..()
 
