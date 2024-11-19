@@ -53,10 +53,10 @@
 	)
 
 	// If the damage type isn't one of the types that already does clothing damage, then we damage armor
-	if(hitting_projectile.damage_type != BURN)
+	if(proj.damage_type != BURN)
 		damage_armor(
 			armor_damage,
-			hitting_projectile.damage_type,
+			proj.damage_type,
 			def_zone,
 		)
 
