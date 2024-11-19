@@ -62,7 +62,7 @@
 
 /// Warns people on the other side of a door that it's about to be kicked open (and dangerous)
 /obj/structure/mineral_door/lethal/proc/telegraph_kick(mob/user)
-	var/turf/turf_to_telegraph = get_step_away(src, user, 1)
+	var/turf/turf_to_telegraph = get_step(src, get_dir(user, src))
 	if(!turf_to_telegraph)
 		message_admins("[src] tried to telegraph a door kick but had no target turf, this is wrong.")
 		return
