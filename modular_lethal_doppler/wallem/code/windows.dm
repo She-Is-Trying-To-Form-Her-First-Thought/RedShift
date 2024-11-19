@@ -63,7 +63,18 @@
 
 /// Changes the window's layer based on rotation
 /obj/structure/window/proc/adjust_dir_layer(direction)
-	layer = (direction & NORTH) ? TABLE_LAYER : initial(layer)
+	if(direction & NORTH)
+		layer = TABLE_LAYER
+		base_pixel_z = -16
+		base_pixel_y = 16
+	if(direction & SOUTH)
+		layer = ABOVE_MOB_LAYER
+		base_pixel_z = 0
+		base_pixel_y = 0
+	else
+		layer = initial(layer)
+		base_pixel_z = 0
+		base_pixel_y = 0
 
 /obj/structure/window/update_icon_state()
 	. = ..()
