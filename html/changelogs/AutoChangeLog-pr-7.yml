@@ -1,0 +1,5 @@
+author: "Paxilmaniac"
+delete-after: True
+changes:
+  - rscadd: "Being on the wrong side of a door that's being kicked in is bad for your health"
+  - bugfix: "Fixes a few bugs like bullets doing double damage"
