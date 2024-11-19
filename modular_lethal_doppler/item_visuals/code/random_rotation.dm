@@ -1,6 +1,10 @@
+/obj/item
+	/// Used for unturning when picked up by a mob
+	var/our_angle = 0
+
 /// Randomly rotates and pixel shifts stuff when dropped or thrown or whatever
 /obj/item/proc/do_messy(pixel_variation = 8, angle_variation = 360, duration = 0)
-	if(item_flags & NO_ANGLE_RANDOM_DROP)
+	if(item_flags & NO_PIXEL_RANDOM_DROP)
 		return
 	animate(src, pixel_x = (base_pixel_x+rand(-pixel_variation,pixel_variation)), duration)
 	animate(src, pixel_y = (base_pixel_y+rand(-pixel_variation,pixel_variation)), duration)
