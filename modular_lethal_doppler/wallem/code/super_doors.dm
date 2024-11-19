@@ -53,6 +53,7 @@
 		return SECONDARY_ATTACK_CANCEL_ATTACK_CHAIN
 	if(!prob(door_kick_chance))
 		playsound(src, kick_fail_sound, 100, TRUE, 3)
+		Shake(1, 1, 1 SECONDS)
 		stop_telegraph(telegraph_turf)
 		return SECONDARY_ATTACK_CANCEL_ATTACK_CHAIN
 	else
@@ -61,11 +62,11 @@
 		return SECONDARY_ATTACK_CANCEL_ATTACK_CHAIN
 
 /obj/structure/mineral_door/lethal/hitby(atom/movable/movable_thing, skipcatch, hitpush, blocked, datum/thrownthing/throwingdatum)
+	. = ..()
 	if(ismob(movable_thing) && !door_opened)
 		var/mob/living/impact_mob = movable_thing
 		impact_mob.Knockdown(3 SECONDS)
 		Open(TRUE)
-	. = ..()
 
 /// Warns people on the other side of a door that it's about to be kicked open (and dangerous)
 /obj/structure/mineral_door/lethal/proc/telegraph_kick(mob/user)
@@ -107,7 +108,7 @@
 	if(isliving(user))
 		if(!can_interact(user))
 			return
-		if(!do_after(user, 2 SECONDS, src))
+		if(!do_after(user, 1.5 SECONDS, src))
 			return
 		SwitchState()
 	else if(ismecha(user))
@@ -117,6 +118,7 @@
 	if(!kicked)
 		playsound(src, openSound, 50, TRUE)
 	else
+		Shake(1, 1, 1 SECONDS)
 		playsound(src, kick_success_sound, 100, TRUE, 3)
 	set_opacity(FALSE)
 	set_density(FALSE)
