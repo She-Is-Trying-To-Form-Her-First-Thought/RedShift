@@ -72,10 +72,6 @@
 	/// Cooldown for the visible message sent from gun flipping.
 	COOLDOWN_DECLARE(flip_cooldown)
 
-	light_system = OVERLAY_LIGHT // DOPPLETHAL ADDITION
-	light_range = 0 // DOPPLETHAL ADDITION
-	light_color = COLOR_WHITE // DOPPLETHAL ADDITION
-
 	var/obj/effect/muzzle_flash/muzzle_flash // DOPPLETHAL ADDITION
 	var/muzzleflash_iconstate // DOPPLETHAL ADDITION
 	var/muzzle_effects = TRUE // DOPPLETHAL ADDITION
