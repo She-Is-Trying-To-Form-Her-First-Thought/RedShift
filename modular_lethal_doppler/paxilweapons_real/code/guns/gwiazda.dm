@@ -28,7 +28,7 @@
 		"pixel_x" = 15, \
 		"pixel_y" = 3, \
 		"inactive_wben_suppressed" = TRUE, \
-		"icon_state" = "pulseshot" \
+		"icon_state" = "plasmashot" \
 	)
 	recoil_animation_information = list(
 		"recoil_angle_upper" = -15, \

@@ -44,6 +44,8 @@
 		"recoil_angle_lower" = -20, \
 		"recoil_burst_speed" = 0.5, \
 		"return_burst_speed" = 0.5, \
+		"recoil_speed" = 0.5, \
+		"return_speed" = 0.5, \
 	)
 
 /obj/item/gun/ballistic/automatic/karim/Initialize(mapload)
