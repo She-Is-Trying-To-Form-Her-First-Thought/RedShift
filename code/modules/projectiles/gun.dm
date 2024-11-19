@@ -451,6 +451,7 @@
 		return FALSE
 	process_chamber()
 	update_appearance()
+	firing_animation(user, TRUE) // DOPPLETHAL EDIT
 	return TRUE
 
 ///returns true if the gun successfully fires
@@ -504,6 +505,7 @@
 			return
 		process_chamber()
 		update_appearance()
+		firing_animation(user, FALSE)
 		semicd = TRUE
 		addtimer(CALLBACK(src, PROC_REF(reset_semicd)), modified_delay)
 
