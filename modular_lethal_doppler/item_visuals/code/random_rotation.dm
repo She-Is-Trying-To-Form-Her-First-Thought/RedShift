@@ -47,7 +47,7 @@
 	do_messy(duration = 4)
 
 /// Fixes how things look when you pick them up
-/mob/put_in_hand(obj/item/item_picked, hand_index, forced, ignore_anim)
+/mob/put_in_hand(obj/item/I, hand_index, forced = FALSE, ignore_anim = TRUE, visuals_only = FALSE)
 	. = ..()
 	if(. && item_picked)
 		item_picked.undo_messy(duration = 0)

@@ -31,7 +31,6 @@
 	weapon_weight = WEAPON_HEAVY
 	pb_knockback = 2
 	recoil = 2
-	muzzle_flash_lum = 3
 	muzzleflash_iconstate = "muzzle_flash_medium"
 
 /obj/item/gun/ballistic/marsian_super_rifle/add_bayonet_point()

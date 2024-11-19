@@ -77,9 +77,7 @@
 	light_color = COLOR_WHITE // DOPPLETHAL ADDITION
 
 	var/obj/effect/muzzle_flash/muzzle_flash // DOPPLETHAL ADDITION
-	var/muzzle_flash_lum = 2 // DOPPLETHAL ADDITION
 	var/muzzleflash_iconstate // DOPPLETHAL ADDITION
-	var/muzzle_flash_color = COLOR_VERY_SOFT_YELLOW // DOPPLETHAL ADDITION
 	var/muzzle_effects = TRUE // DOPPLETHAL ADDITION
 
 /obj/item/gun/Initialize(mapload)
