@@ -60,6 +60,13 @@
 		chief_kickabitch_from_the_casino(user, telegraph_turf)
 		return SECONDARY_ATTACK_CANCEL_ATTACK_CHAIN
 
+/obj/structure/mineral_door/lethal/hitby(atom/movable/movable_thing, skipcatch, hitpush, blocked, datum/thrownthing/throwingdatum)
+	. = ..()
+	if(ismob(movable_thing) && !door_opened)
+		var/mob/living/impact_mob = movable_thing
+		impact_mob.Knockdown(3 SECONDS)
+		Open(TRUE)
+
 /// Warns people on the other side of a door that it's about to be kicked open (and dangerous)
 /obj/structure/mineral_door/lethal/proc/telegraph_kick(mob/user)
 	var/turf/turf_to_telegraph = get_step(src, get_dir(user, src))
