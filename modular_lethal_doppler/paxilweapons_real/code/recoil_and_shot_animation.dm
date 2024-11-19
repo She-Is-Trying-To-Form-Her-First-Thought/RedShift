@@ -98,7 +98,8 @@
 	if(!can_unsuppress)
 		return
 	if(gets_larger_suppressed)
-		update_weight_class(w_class -= suppressed.w_class)
+		var/obj/item/suppressor/gun_suppressor = suppressed
+		update_weight_class(w_class -= gun_suppressor.w_class)
 	for(var/variable in gunshot_animation_information)
 		var/associated_value = gunshot_animation_information[variable]
 		gunshot_animation_information -= variable
