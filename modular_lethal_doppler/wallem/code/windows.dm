@@ -45,8 +45,6 @@
 	smoothing_flags = SMOOTH_BITMASK|SMOOTH_BORDER_OBJECT|SMOOTH_OBJ
 	canSmoothWith = SMOOTH_GROUP_WINDOW_DIRECIONAL
 	smoothing_groups = SMOOTH_GROUP_WINDOW_DIRECIONAL + SMOOTH_GROUP_CLOSED_TURFS
-	base_pixel_y = 16
-	base_pixel_z = -16
 	/// Do we change layer based on rotation?
 	var/change_layer_on_rotation = TRUE
 
