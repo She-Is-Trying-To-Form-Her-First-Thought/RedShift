@@ -17,6 +17,17 @@
 	fire_delay = 0.25 SECONDS
 	recoil = 0.25
 	muzzleflash_iconstate = "muzzle_flash_light"
+	gunshot_animation_information = list(
+		"pixel_x" = 14, \
+		"pixel_y" = 3, \
+		"inactive_wben_suppressed" = TRUE, \
+	)
+	recoil_animation_information = list(
+		"recoil_angle_upper" = -15, \
+		"recoil_angle_lower" = -30, \
+		"recoil_burst_speed" = 0.5, \
+		"return_burst_speed" = 0.5, \
+	)
 
 /obj/item/gun/ballistic/automatic/pistol/weevil/give_manufacturer_examine()
 	AddElement(/datum/element/manufacturer_examine, COMPANY_XHIHAO)
