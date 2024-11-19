@@ -4,7 +4,7 @@
 	icon = 'modular_lethal_doppler/wallem/icons/cladding.dmi'
 	icon_state = "basic_big"
 	SET_BASE_PIXEL(0, 22)
-	layer = ABOVE_WINDOW_LAYER + 0.01
+	layer = ABOVE_WINDOW_LAYER
 	anchored = TRUE
 	density = FALSE
 	max_integrity = 200
