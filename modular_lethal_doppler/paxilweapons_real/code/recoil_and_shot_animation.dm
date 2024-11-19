@@ -84,10 +84,10 @@
 
 /// All the stuff below this is just for updating important information for recoil stuff
 
-/obj/item/gun/ballistic/install_suppressor(obj/item/suppressor/S)
-	suppressed = suppressor
+/obj/item/gun/ballistic/install_suppressor(obj/item/suppressor/suppressor_added)
+	suppressed = suppressor_added
 	if(gets_larger_suppressed)
-		update_weight_class(w_class += suppressor.w_class)
+		update_weight_class(w_class += suppressor_added.w_class)
 	for(var/variable in gunshot_animation_information)
 		var/associated_value = gunshot_animation_information[variable]
 		gunshot_animation_information -= variable
@@ -97,10 +97,8 @@
 /obj/item/gun/ballistic/clear_suppressor()
 	if(!can_unsuppress)
 		return
-	if(isitem(suppressed))
-		var/obj/item/suppressor = suppressed
 	if(gets_larger_suppressed)
-		update_weight_class(w_class -= suppressor.w_class)
+		update_weight_class(w_class -= suppressed.w_class)
 	for(var/variable in gunshot_animation_information)
 		var/associated_value = gunshot_animation_information[variable]
 		gunshot_animation_information -= variable
