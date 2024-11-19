@@ -723,7 +723,7 @@
 /// Proc to append behavior related to lying down.
 /mob/living/proc/on_lying_down(new_lying_angle)
 	if(layer == initial(layer)) //to avoid things like hiding larvas.
-		layer = LYING_MOB_LAYER //so mob lying always appear behind standing mobs
+		layer = OBJ_LAYER // DOPPLETHAL EDIT - layer = LYING_MOB_LAYER //so mob lying always appear behind standing mobs
 	add_traits(list(TRAIT_UI_BLOCKED, TRAIT_PULL_BLOCKED, TRAIT_UNDENSE), LYING_DOWN_TRAIT)
 	if(HAS_TRAIT(src, TRAIT_FLOORED) && !(dir & (NORTH|SOUTH)))
 		setDir(pick(NORTH, SOUTH)) // We are and look helpless.
@@ -733,7 +733,7 @@
 
 /// Proc to append behavior related to lying down.
 /mob/living/proc/on_standing_up()
-	if(layer == LYING_MOB_LAYER)
+	if(layer == OBJ_LAYER) // DOPPLETHAL EDIT - if(layer == LYING_MOB_LAYER)
 		layer = initial(layer)
 	remove_traits(list(TRAIT_UI_BLOCKED, TRAIT_PULL_BLOCKED, TRAIT_UNDENSE), LYING_DOWN_TRAIT)
 	// Make sure it doesn't go out of the southern bounds of the tile when standing.
