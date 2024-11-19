@@ -20,58 +20,51 @@
 
 	return FALSE
 
-// Override of living bullet_act that also damages the armor someone is wearing
+// Override of living apply_projectile_effects that also damages the armor someone is wearing
 
-/mob/living/bullet_act(obj/projectile/hitting_projectile, def_zone, piercing_hit = FALSE)
-	. = ..()
-	if(. != BULLET_ACT_HIT)
-		return .
-	if(!hitting_projectile.is_hostile_projectile())
-		return BULLET_ACT_HIT
-
-	// we need a second, silent armor check to actually know how much to reduce damage taken, as opposed to
-	// on [/atom/proc/bullet_act] where it's just to pass it to the projectile's on_hit().
-	var/armor_check = check_projectile_armor(def_zone, hitting_projectile, is_silent = TRUE)
-
-	var/flat_reduction = (getarmor(def_zone, hitting_projectile.armor_flag) / 5) * ((100 - hitting_projectile.armour_penetration) / 100)
-	var/armor_damage = hitting_projectile.damage - (hitting_projectile.damage - flat_reduction)
+/mob/living/apply_projectile_effects(obj/projectile/proj, def_zone, armor_check)
+	var/flat_reduction = (getarmor(def_zone, proj.armor_flag) / 5) * ((100 - proj.armour_penetration) / 100)
+	var/armor_damage = proj.damage - (proj.damage - flat_reduction)
 
 	apply_damage(
-		damage = max(0, hitting_projectile.damage - flat_reduction),
-		damagetype = hitting_projectile.damage_type,
+		damage = max(0, proj.damage - flat_reduction),
+		damagetype = proj.damage_type,
 		def_zone = def_zone,
 		blocked = min(ARMOR_MAX_BLOCK, armor_check - armor_damage),  //cap damage reduction at 90%
-		wound_bonus = hitting_projectile.wound_bonus,
-		bare_wound_bonus = hitting_projectile.bare_wound_bonus,
-		sharpness = hitting_projectile.sharpness,
-		attack_direction = get_dir(hitting_projectile.starting, src),
+		wound_bonus = proj.wound_bonus,
+		bare_wound_bonus = proj.bare_wound_bonus,
+		sharpness = proj.sharpness,
+		attack_direction = get_dir(proj.starting, src),
 	)
+
 	apply_effects(
-		stun = hitting_projectile.stun,
-		knockdown = hitting_projectile.knockdown,
-		unconscious = hitting_projectile.unconscious,
-		slur = (mob_biotypes & MOB_ROBOTIC) ? 0 SECONDS : hitting_projectile.slur, // Don't want your cyborgs to slur from being ebow'd
-		stutter = (mob_biotypes & MOB_ROBOTIC) ? 0 SECONDS : hitting_projectile.stutter, // Don't want your cyborgs to stutter from being tazed
-		eyeblur = hitting_projectile.eyeblur,
-		drowsy = hitting_projectile.drowsy,
+		stun = proj.stun,
+		knockdown = proj.knockdown,
+		unconscious = proj.unconscious,
+		slur = (mob_biotypes & MOB_ROBOTIC) ? 0 SECONDS : proj.slur, // Don't want your cyborgs to slur from being ebow'd
+		stutter = (mob_biotypes & MOB_ROBOTIC) ? 0 SECONDS : proj.stutter, // Don't want your cyborgs to stutter from being tazed
+		eyeblur = proj.eyeblur,
+		drowsy = proj.drowsy,
 		blocked = armor_check,
-		stamina = hitting_projectile.stamina,
-		jitter = (mob_biotypes & MOB_ROBOTIC) ? 0 SECONDS : hitting_projectile.jitter, // Cyborgs can jitter but not from being shot
-		paralyze = hitting_projectile.paralyze,
-		immobilize = hitting_projectile.immobilize,
+		stamina = proj.stamina,
+		jitter = (mob_biotypes & MOB_ROBOTIC) ? 0 SECONDS : proj.jitter, // Cyborgs can jitter but not from being shot
+		paralyze = proj.paralyze,
+		immobilize = proj.immobilize,
 	)
 
 	// If the damage type isn't one of the types that already does clothing damage, then we damage armor
-	if(hitting_projectile.damage_type != BURN)
+	if(proj.damage_type != BURN)
 		damage_armor(
 			armor_damage,
-			hitting_projectile.damage_type,
+			proj.damage_type,
 			def_zone,
 		)
 
-	if(hitting_projectile.dismemberment)
-		check_projectile_dismemberment(hitting_projectile, def_zone)
-	return BULLET_ACT_HIT
+	if(proj.dismemberment)
+		check_projectile_dismemberment(proj, def_zone)
+
+	if (proj.damage && armor_check < 100)
+		create_projectile_hit_effects(proj, def_zone, armor_check)
 
 // Override take_damage_zone to allow stuff with only one covered zone to take damage
 /obj/item/clothing/proc/take_damage_zone(def_zone, damage_amount, damage_type, armour_penetration)

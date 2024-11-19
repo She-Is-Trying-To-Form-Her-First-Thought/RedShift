@@ -26,6 +26,16 @@
 	var/kick_success_sound = 'modular_lethal_doppler/wallem/sounds/door_kick_w.ogg'
 	/// What chance do you have to kick this door open every attempt?
 	var/door_kick_chance = 60
+	/// Overlay we display when a door is being kicked in
+	var/mutable_appearance/telegraph_overlay
+
+/obj/structure/mineral_door/lethal/Initialize(mapload)
+	. = ..()
+	telegraph_overlay = mutable_appearance('icons/mob/telegraphing/telegraph_holographic.dmi', "target_box")
+
+/obj/structure/mineral_door/lethal/Destroy()
+	telegraph_overlay = null
+	return ..()
 
 /obj/structure/mineral_door/lethal/examine(mob/user)
 	. = ..()
@@ -37,14 +47,54 @@
 		return
 	if(door_opened)
 		return SECONDARY_ATTACK_CANCEL_ATTACK_CHAIN
+	var/turf/telegraph_turf = telegraph_kick(user)
 	if(!do_after(user, 0.5 SECONDS, src))
+		stop_telegraph(telegraph_turf)
 		return SECONDARY_ATTACK_CANCEL_ATTACK_CHAIN
 	if(!prob(door_kick_chance))
 		playsound(src, kick_fail_sound, 100, TRUE, 3)
+		stop_telegraph(telegraph_turf)
 		return SECONDARY_ATTACK_CANCEL_ATTACK_CHAIN
 	else
 		Open(TRUE)
+		chief_kickabitch_from_the_casino(user, telegraph_turf)
 		return SECONDARY_ATTACK_CANCEL_ATTACK_CHAIN
+
+/// Warns people on the other side of a door that it's about to be kicked open (and dangerous)
+/obj/structure/mineral_door/lethal/proc/telegraph_kick(mob/user)
+	var/turf/turf_to_telegraph = get_step(src, get_dir(user, src))
+	if(!turf_to_telegraph)
+		message_admins("[src] tried to telegraph a door kick but had no target turf, this is wrong.")
+		return
+	turf_to_telegraph.add_overlay(telegraph_overlay)
+	return turf_to_telegraph
+
+/// Finds everyone in the telegraph turf and throws them across the room
+/obj/structure/mineral_door/lethal/proc/chief_kickabitch_from_the_casino(mob/user, turf/telegraph_turf)
+	var/turf/throwtarget = get_edge_target_turf(src, get_dir(src, telegraph_turf))
+	for(var/atom/movable/kicked_thing as anything in telegraph_turf.contents)
+		if(isturf(kicked_thing))
+			continue
+		if(kicked_thing.anchored)
+			continue
+		if(isliving(kicked_thing))
+			var/mob/living/kicked_mob = kicked_thing
+			kicked_mob.Knockdown(3 SECONDS)
+			to_chat(kicked_mob, span_userdanger("[src] slams into you, throwing you back!"))
+		kicked_thing.safe_throw_at(
+			target = throwtarget,
+			range = 3,
+			speed = 2,
+			thrower = user,
+			force = MOVE_FORCE_STRONG,
+		)
+	stop_telegraph(telegraph_turf)
+
+/// Removes a telegraph overlay if there is one from the given turf, if there is one
+/obj/structure/mineral_door/lethal/proc/stop_telegraph(turf/telegraph_turf)
+	if(!telegraph_turf)
+		return
+	telegraph_turf.cut_overlay(telegraph_overlay)
 
 /obj/structure/mineral_door/lethal/TryToSwitchState(atom/user)
 	if(isliving(user))

@@ -40,6 +40,7 @@
 	alpha = 200
 	base_icon_state = "window"
 	icon = 'modular_lethal_doppler/wallem/icons/normal_thindow.dmi'
+	layer = 3.3
 	smoothing_flags = SMOOTH_BITMASK|SMOOTH_BORDER_OBJECT|SMOOTH_OBJ
 	canSmoothWith = SMOOTH_GROUP_WINDOW_DIRECIONAL
 	smoothing_groups = SMOOTH_GROUP_WINDOW_DIRECIONAL + SMOOTH_GROUP_CLOSED_TURFS
