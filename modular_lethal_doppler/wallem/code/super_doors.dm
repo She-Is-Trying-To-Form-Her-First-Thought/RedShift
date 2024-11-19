@@ -61,11 +61,17 @@
 		chief_kickabitch_from_the_casino(user, telegraph_turf)
 		return SECONDARY_ATTACK_CANCEL_ATTACK_CHAIN
 
-/obj/structure/mineral_door/lethal/hitby(atom/movable/movable_thing, skipcatch, hitpush, blocked, datum/thrownthing/throwingdatum)
+/obj/structure/mineral_door/lethal/CanPass(atom/movable/mover, border_dir)
 	. = ..()
-	if(ismob(movable_thing) && !door_opened)
-		var/mob/living/impact_mob = movable_thing
-		impact_mob.Knockdown(3 SECONDS)
+	if(isliving(mover) && mover.throwing)
+		crash_addiction(mover)
+		return TRUE
+	return .
+
+/// Crashes the door open if someone gets thrown into it
+/obj/structure/mineral_door/lethal/proc/crash_addiction(mob/living/crashed_mob)
+	if(!door_opened)
+		crashed_mob.Knockdown(3 SECONDS)
 		Open(TRUE)
 
 /// Warns people on the other side of a door that it's about to be kicked open (and dangerous)
