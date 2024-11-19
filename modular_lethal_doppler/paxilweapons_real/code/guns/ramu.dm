@@ -27,6 +27,17 @@
 	slot_flags = ITEM_SLOT_BACK
 	recoil = 2
 	accepted_magazine_type = /obj/item/ammo_box/magazine/internal/s6gauge
+	gunshot_animation_information = list(
+		"pixel_x" = 35, \
+		"pixel_y" = 3, \
+		"inactive_wben_suppressed" = TRUE, \
+	)
+	recoil_animation_information = list(
+		"recoil_angle_upper" = -10, \
+		"recoil_angle_lower" = -30, \
+		"recoil_burst_speed" = 0.5, \
+		"return_burst_speed" = 0.5, \
+	)
 
 /obj/item/gun/ballistic/shotgun/ramu/add_bayonet_point()
 	return

@@ -26,6 +26,17 @@
 	actions_types = list()
 	pickup_sound = 'modular_lethal_doppler/paxilweapons_real/sound/pickup_sounds/drop_heavygun.wav'
 	drop_sound = 'modular_lethal_doppler/paxilweapons_real/sound/pickup_sounds/drop_heavygun.wav'
+	gunshot_animation_information = list(
+		"pixel_x" = 35, \
+		"pixel_y" = 1, \
+		"inactive_wben_suppressed" = TRUE, \
+	)
+	recoil_animation_information = list(
+		"recoil_angle_upper" = -10, \
+		"recoil_angle_lower" = -20, \
+		"recoil_burst_speed" = 0.5, \
+		"return_burst_speed" = 0.5, \
+	)
 	/// The currently stored range to detonate shells at
 	var/target_range = 14
 	/// The maximum range we can set grenades to detonate at, just to be safe

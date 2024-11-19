@@ -72,14 +72,8 @@
 	/// Cooldown for the visible message sent from gun flipping.
 	COOLDOWN_DECLARE(flip_cooldown)
 
-	light_system = OVERLAY_LIGHT // DOPPLETHAL ADDITION
-	light_range = 0 // DOPPLETHAL ADDITION
-	light_color = COLOR_WHITE // DOPPLETHAL ADDITION
-
 	var/obj/effect/muzzle_flash/muzzle_flash // DOPPLETHAL ADDITION
-	var/muzzle_flash_lum = 2 // DOPPLETHAL ADDITION
 	var/muzzleflash_iconstate // DOPPLETHAL ADDITION
-	var/muzzle_flash_color = COLOR_VERY_SOFT_YELLOW // DOPPLETHAL ADDITION
 	var/muzzle_effects = TRUE // DOPPLETHAL ADDITION
 
 /obj/item/gun/Initialize(mapload)
@@ -453,6 +447,7 @@
 		return FALSE
 	process_chamber()
 	update_appearance()
+	firing_animation(user, TRUE) // DOPPLETHAL EDIT
 	return TRUE
 
 ///returns true if the gun successfully fires
@@ -506,6 +501,7 @@
 			return
 		process_chamber()
 		update_appearance()
+		firing_animation(user, FALSE)
 		semicd = TRUE
 		addtimer(CALLBACK(src, PROC_REF(reset_semicd)), modified_delay)
 
