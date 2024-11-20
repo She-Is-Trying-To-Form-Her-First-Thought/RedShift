@@ -18,3 +18,7 @@
 	shoes = /obj/item/clothing/shoes/jackboots/frontier_colonist
 	gloves = /obj/item/clothing/gloves/frontier_colonist
 	back = /obj/item/storage/backpack/industrial/frontier_colonist
+
+/obj/structure/mystery_box
+	base_pixel_y = 0
+	pixel_y = 0

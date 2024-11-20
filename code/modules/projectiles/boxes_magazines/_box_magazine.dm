@@ -171,7 +171,8 @@
 		for(var/obj/item/ammo_casing/casing in other_box.ammo_list())
 			var/did_load = give_round(casing, replace_spent)
 			if(did_load)
-				other_box.stored_ammo -= casing
+				if(other_box.stored_ammo) // DOPPLETHAL EDIT - other_box.stored_ammo -= casing
+					other_box.stored_ammo -= casing // DOPPLETHAL EDIT ADDITION
 				num_loaded++
 			if(!did_load || !multiload)
 				break

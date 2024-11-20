@@ -1,4 +1,5 @@
 /obj/structure/window/fulltile
+	change_layer_on_rotation = FALSE
 	icon = 'icons/icon_cutter_deez/windows/window.dmi'
 
 /obj/structure/window/reinforced/fulltile
@@ -44,6 +45,34 @@
 	smoothing_flags = SMOOTH_BITMASK|SMOOTH_BORDER_OBJECT|SMOOTH_OBJ
 	canSmoothWith = SMOOTH_GROUP_WINDOW_DIRECIONAL
 	smoothing_groups = SMOOTH_GROUP_WINDOW_DIRECIONAL + SMOOTH_GROUP_CLOSED_TURFS
+	/// Do we change layer based on rotation?
+	var/change_layer_on_rotation = TRUE
+
+/obj/structure/window/Initialize(mapload)
+	. = ..()
+	if(change_layer_on_rotation)
+		RegisterSignal(src, COMSIG_ATOM_DIR_CHANGE, PROC_REF(on_change_layer))
+		adjust_dir_layer(dir)
+
+/// Reads if the window has rotated
+/obj/structure/window/proc/on_change_layer(datum/source, old_dir, new_dir)
+	SIGNAL_HANDLER
+	adjust_dir_layer(new_dir)
+
+/// Changes the window's layer based on rotation
+/obj/structure/window/proc/adjust_dir_layer(direction)
+	if(direction & NORTH)
+		layer = TABLE_LAYER
+		base_pixel_z = -16
+		base_pixel_y = 16
+	if(direction & SOUTH)
+		layer = ABOVE_MOB_LAYER
+		base_pixel_z = 0
+		base_pixel_y = 0
+	else
+		layer = initial(layer)
+		base_pixel_z = 0
+		base_pixel_y = 0
 
 /obj/structure/window/update_icon_state()
 	. = ..()

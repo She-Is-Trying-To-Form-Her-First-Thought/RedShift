@@ -87,9 +87,9 @@
 		return
 
 	var/obj/item/ammo_box/magazine/ammo_stack = new ammo_stack_type(drop_location())
-	user.transferItemToLoc(src, ammo_stack, silent = TRUE)
+	//user.transferItemToLoc(src, ammo_stack, silent = TRUE)
 	ammo_stack.give_round(src)
-	user.transferItemToLoc(ammo_casing, ammo_stack, silent = TRUE)
+	//user.transferItemToLoc(ammo_casing, ammo_stack, silent = TRUE)
 	ammo_stack.give_round(ammo_casing)
 	user.put_in_hands(ammo_stack)
 	ammo_stack.update_appearance()

@@ -3,7 +3,7 @@
 
 /turf/closed
 	plane = GAME_PLANE
-	layer = ABOVE_WINDOW_LAYER
+	layer = OPEN_DOOR_LAYER
 
 /turf/closed/Initialize(mapload)
 	. = ..()
