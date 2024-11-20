@@ -1,0 +1,4 @@
+author: "Paxilmaniac"
+delete-after: True
+changes:
+  - bugfix: "shotgun slugs no longer fire like buckshot but the pellets are slugs"
