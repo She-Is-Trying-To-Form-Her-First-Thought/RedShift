@@ -81,6 +81,7 @@
 	desc = "A solid metal slug that fits neatly into a standard 12 gauge hull."
 	icon_state = "slugshell"
 	projectile_type = /obj/projectile/bullet/lethal_s12gauge/slug
+	pellets = 1
 	variance = 3
 
 /obj/projectile/bullet/lethal_s12gauge/slug
