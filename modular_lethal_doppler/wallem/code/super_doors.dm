@@ -64,7 +64,7 @@
 /obj/structure/mineral_door/lethal/CanPass(atom/movable/mover, border_dir)
 	. = ..()
 	if(isliving(mover) && mover.throwing)
-		crash_addiction(mover)
+		INVOKE_ASYNC(src, PROC_REF(crash_addiction), mover)
 		return TRUE
 	return .
 
