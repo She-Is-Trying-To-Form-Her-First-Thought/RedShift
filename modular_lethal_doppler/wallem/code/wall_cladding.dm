@@ -8,6 +8,7 @@
 	anchored = TRUE
 	density = FALSE
 	max_integrity = 200
+	dir = NORTH
 
 /obj/structure/wall_cladding/Initialize(mapload)
 	. = ..()
