@@ -15,7 +15,7 @@
 	damage = 50
 	wound_bonus = 10
 	bare_wound_bonus = 20
-	speed = 0.5
+	speed = 2.5
 
 // Marsian but it flies even faster, but does less damage
 
@@ -29,7 +29,7 @@
 
 /obj/projectile/bullet/c8marsian/shockwave
 	damage = 40
-	speed = 0.3
+	speed = 3
 
 // Marsian AP, has armor piercing and slightly less damage, but has some
 

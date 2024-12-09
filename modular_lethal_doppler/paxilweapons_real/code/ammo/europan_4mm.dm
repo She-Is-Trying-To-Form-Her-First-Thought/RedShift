@@ -18,4 +18,4 @@
 	name = "4mm bullet"
 	icon = 'modular_lethal_doppler/paxilweapons_real/icons/projectiles.dmi'
 	damage = 18
-	speed = 0.6
+	speed = 1.5
