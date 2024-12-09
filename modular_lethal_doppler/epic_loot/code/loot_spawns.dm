@@ -67,6 +67,7 @@
 		/obj/item/ammo_box/magazine/lanca = 2,
 		/obj/item/ammo_box/magazine/c980_grenade/chill_out = 2,
 		/obj/item/ammo_box/magazine/c980_grenade/drum/chill_out = 1,
+		/obj/item/ammo_box/magazine/smartgun = 2,
 	)
 
 // The weapons themselves
