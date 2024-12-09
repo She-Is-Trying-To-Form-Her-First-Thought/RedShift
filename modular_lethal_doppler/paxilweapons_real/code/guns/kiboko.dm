@@ -17,7 +17,7 @@
 	w_class = WEIGHT_CLASS_BULKY
 	weapon_weight = WEAPON_HEAVY
 	slot_flags = ITEM_SLOT_BACK
-	accepted_magazine_type = /obj/item/ammo_box/magazine/c980_grenade
+	accepted_magazine_type = /obj/item/ammo_box/magazine/c980_grenade/chill_out
 	fire_sound = 'modular_lethal_doppler/paxilweapons_real/sound/kiboko/grenade_launcher.ogg'
 	can_suppress = FALSE
 	burst_size = 1
@@ -88,7 +88,7 @@
 	icon_state = "kiboko_evil"
 	worn_icon_state = "kiboko_evil"
 	inhand_icon_state = "kiboko_evil"
-	spawn_magazine_type = /obj/item/ammo_box/magazine/c980_grenade/drum
+	spawn_magazine_type = /obj/item/ammo_box/magazine/c980_grenade/drum/chill_out
 
 /obj/item/gun/ballistic/automatic/sol_grenade_launcher/evil/no_mag
 	spawnwithmagazine = FALSE

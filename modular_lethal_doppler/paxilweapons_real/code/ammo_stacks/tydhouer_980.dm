@@ -68,6 +68,9 @@
 	caliber = CALIBER_980TYDHOUER
 	max_ammo = 4
 
+/obj/item/ammo_box/magazine/c980_grenade/chill_out
+	ammo_type = /obj/item/ammo_casing/c980grenade/flechette
+
 /obj/item/ammo_box/magazine/c980_grenade/starts_empty
 	start_empty = TRUE
 
@@ -77,6 +80,9 @@
 	icon_state = "kiboko_drum"
 	w_class = WEIGHT_CLASS_NORMAL
 	max_ammo = 6
+
+/obj/item/ammo_box/magazine/c980_grenade/drum/chill_out
+	ammo_type = /obj/item/ammo_casing/c980grenade/flechette
 
 /obj/item/ammo_box/magazine/c980_grenade/drum/starts_empty
 	start_empty = TRUE
