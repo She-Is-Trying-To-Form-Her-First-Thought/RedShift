@@ -132,7 +132,6 @@ MAPPING_DIRECTIONAL_HELPERS(/obj/machinery/vending/wallmed/epic_loot/evil, 32)
 				/obj/item/storage/pouch/ammo = INFINITY,
 				/obj/item/storage/epic_loot_org_pouch = INFINITY,
 				/obj/item/storage/epic_loot_medpen_case = INFINITY,
-				/obj/item/storage/epic_loot_tag_case = INFINITY,
 				/obj/item/storage/belt/military/assault = INFINITY,
 				/obj/item/storage/belt/holster/nukie/cowboy = INFINITY,
 				/obj/item/storage/backpack/industrial/frontier_colonist = INFINITY,
