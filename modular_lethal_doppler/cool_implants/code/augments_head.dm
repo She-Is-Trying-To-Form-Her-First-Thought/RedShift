@@ -41,7 +41,7 @@
 /obj/item/organ/cyberimp/sensory_enhancer/on_bodypart_remove(obj/item/bodypart/limb, movement_flags)
 	limb.remove_bodypart_overlay(da_bodypart_overlay)
 	QDEL_NULL(da_bodypart_overlay)
-	owner.update_body_parts()
+	owner?.update_body_parts()
 	return ..()
 
 /obj/item/autosurgeon/syndicate/sandy
@@ -146,7 +146,7 @@
 /obj/item/organ/cyberimp/hackerman_deck/on_bodypart_remove(obj/item/bodypart/limb, movement_flags)
 	limb.remove_bodypart_overlay(da_bodypart_overlay)
 	QDEL_NULL(da_bodypart_overlay)
-	owner.update_body_parts()
+	owner?.update_body_parts()
 	return ..()
 
 /datum/bodypart_overlay/simple/hackerman

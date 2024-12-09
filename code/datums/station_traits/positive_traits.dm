@@ -294,6 +294,9 @@
 		/datum/job/shaft_miner = /obj/item/organ/monster_core/rush_gland,
 		/datum/job/station_engineer = /obj/item/organ/cyberimp/arm/toolset,
 		/datum/job/warden = /obj/item/organ/cyberimp/eyes/hud/security,
+		/datum/job/gakster = /obj/item/organ/cyberimp/sensory_enhancer,
+		/datum/job/filtre = /obj/item/organ/cyberimp/sensory_enhancer,
+		/datum/job/pinata = /obj/item/organ/cyberimp/sensory_enhancer
 	)
 
 /datum/station_trait/cybernetic_revolution/New()
