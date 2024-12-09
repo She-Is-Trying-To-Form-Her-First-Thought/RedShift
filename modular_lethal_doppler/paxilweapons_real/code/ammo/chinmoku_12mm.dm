@@ -18,7 +18,7 @@
 	wound_bonus = 10
 	bare_wound_bonus = 20
 	damage_falloff_tile = -3
-	speed = 1.2
+	speed = 0.9
 
 // Chinmoku "special", with armor piercing but more damage falloff
 
