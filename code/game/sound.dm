@@ -801,6 +801,5 @@
 		if(SFX_REGULAR_IMPACT)
 			soundin = pick(
 				'modular_lethal_doppler/paxilweapons_real/sound/impacts/regular/impact_1.wav',
-				'modular_lethal_doppler/paxilweapons_real/sound/impacts/regular/impact_2.wav',
 			)
 	return soundin

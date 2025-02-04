@@ -366,7 +366,7 @@
 		impact_y = entry_y + movement_vector?.pixel_y * rand(0, ICON_SIZE_Y / 2)
 
 	if(isturf(target) && hitsound_wall)
-		playsound(src, hitsound_wall, clamp(vol_by_damage() + (suppressed ? 0 : 20), 0, 100), TRUE, -1)
+		playsound(src, hitsound_wall, clamp(vol_by_damage() + (suppressed ? 0 : 20), 0, 100), TRUE, 5)
 
 	if(damage > 0 && (damage_type == BRUTE || damage_type == BURN) && iswallturf(target_turf) && prob(75))
 		var/turf/closed/wall/target_wall = target_turf
@@ -377,7 +377,7 @@
 		return BULLET_ACT_HIT
 
 	if (hitsound)
-		playsound(src, hitsound, vol_by_damage(), TRUE, -1)
+		playsound(src, hitsound, vol_by_damage(), TRUE, 5) // LETHAL EDIT playsound(src, hitsound, vol_by_damage(), TRUE, -1)
 
 	if (!isliving(target))
 		if(impact_effect_type && !hitscan)
@@ -413,10 +413,10 @@
 
 /obj/projectile/proc/vol_by_damage()
 	if (suppressed)
-		return 5
+		return 50 // LETHAL EDIT return 5
 	if (!damage)
 		return 50 //if the projectile doesn't do damage, play its hitsound at 50% volume
-	return clamp(damage * 0.67, 30, 100) // Multiply projectile damage by 0.67, then CLAMP the value between 30 and 1
+	return clamp(damage * 0.67, 50, 100) // LETHAL EDIT return clamp(damage * 0.67, 30, 100) // Multiply projectile damage by 0.67, then CLAMP the value between 30 and 1
 
 /obj/projectile/proc/firer_deleted(datum/source)
 	SIGNAL_HANDLER
