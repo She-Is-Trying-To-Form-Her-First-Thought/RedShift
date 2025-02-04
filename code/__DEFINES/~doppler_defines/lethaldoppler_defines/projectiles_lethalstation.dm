@@ -38,3 +38,7 @@
 #define SMOOTH_GROUP_GRILLE_WINDOWS S_OBJ(151)
 /// Smooth group for directional windows
 #define SMOOTH_GROUP_WINDOW_DIRECIONAL S_OBJ(152)
+
+/// Sound effect groups for lethal
+#define SFX_SUPER_RICOCHET "super_ricochet"
+#define SFX_REGULAR_IMPACT "regular_impact"

@@ -7411,6 +7411,7 @@
 #include "modular_lethal_doppler\paxilweapons_real\code\grenades.dm"
 #include "modular_lethal_doppler\paxilweapons_real\code\gun_racks.dm"
 #include "modular_lethal_doppler\paxilweapons_real\code\gunsets.dm"
+#include "modular_lethal_doppler\paxilweapons_real\code\hitsounds.dm"
 #include "modular_lethal_doppler\paxilweapons_real\code\motion_detector.dm"
 #include "modular_lethal_doppler\paxilweapons_real\code\recoil_and_shot_animation.dm"
 #include "modular_lethal_doppler\paxilweapons_real\code\suppressor_size_change.dm"
