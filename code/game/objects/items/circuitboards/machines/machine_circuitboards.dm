@@ -458,7 +458,7 @@
 
 //Generic
 /obj/item/circuitboard/machine/component_printer
-	name = "\improper Component Printer (Machine Board)"
+	name = "\improper Component Printer"
 	greyscale_colors = CIRCUIT_COLOR_SCIENCE
 	build_path = /obj/machinery/component_printer
 	req_components = list(
@@ -467,7 +467,7 @@
 	)
 
 /obj/item/circuitboard/machine/module_duplicator
-	name = "\improper Module Duplicator (Machine Board)"
+	name = "\improper Module Duplicator"
 	greyscale_colors = CIRCUIT_COLOR_SCIENCE
 	build_path = /obj/machinery/module_duplicator
 	req_components = list(
@@ -500,6 +500,8 @@
 	req_components = list(/datum/stock_part/capacitor = 1)
 	needs_anchored = FALSE //wew lad
 	var/secure = FALSE
+	//DOPPLER EDIT CHANGE - Makes them upgraded by default because who in the hell is going to upgrade all of them manually.
+	def_components = list(/datum/stock_part/capacitor = /datum/stock_part/capacitor/tier4)
 
 /obj/item/circuitboard/machine/holopad/multitool_act(mob/living/user, obj/item/tool)
 	if(secure)
@@ -688,10 +690,10 @@
 		/obj/machinery/vending/wardrobe/sec_wardrobe = "SecDrobe",
 		/obj/machinery/vending/wardrobe/viro_wardrobe = "ViroDrobe",
 		/obj/machinery/vending/imported/nt = "NT Sustenance Supplier", //DOPPLER ADDITION
-		/obj/machinery/vending/imported/yangyu = "Fudobenda", //DOPPLER ADDITION
 		/obj/machinery/vending/imported/mothic = "Nomad Fleet Ration Chit Exchange", //DOPPLER ADDITION
 		/obj/machinery/vending/imported/tiziran = "Tiziran Imported Delicacies", //DOPPLER ADDITION
 		/obj/machinery/vending/deforest_medvend = "DeForest Med-Vend", //DOPPLER ADDITION
+		/obj/machinery/vending/imported/marsian = "Marsian MEGA-Vend" //DOPPLER ADDITION
 	)
 
 /obj/item/circuitboard/machine/vendor/screwdriver_act(mob/living/user, obj/item/tool)
@@ -838,7 +840,7 @@
 		/obj/item/stack/sheet/glass = 1)
 
 /obj/item/circuitboard/machine/chem_mass_spec
-	name = "High-Performance Liquid Chromatography"
+	name = "High-Performance Liquid Chromatography Machine"
 	greyscale_colors = CIRCUIT_COLOR_MEDICAL
 	build_path = /obj/machinery/chem_mass_spec
 	req_components = list(
@@ -1471,6 +1473,16 @@
 		/datum/stock_part/scanning_module = 1,
 		/datum/stock_part/card_reader = 1)
 
+/obj/item/circuitboard/machine/mailsorter
+	name = "Mail Sorter"
+	greyscale_colors = CIRCUIT_COLOR_SUPPLY
+	build_path = /obj/machinery/mailsorter
+	req_components = list(
+		/obj/item/stack/sheet/glass = 1,
+		/datum/stock_part/matter_bin = 2,
+		/datum/stock_part/scanning_module = 1)
+	needs_anchored = TRUE
+
 //Tram
 /obj/item/circuitboard/machine/crossing_signal
 	name = "Crossing Signal"
@@ -1607,7 +1619,7 @@
 		)
 
 /obj/item/circuitboard/machine/coffeemaker
-	name = "Coffeemaker (Machine Board)"
+	name = "Coffeemaker"
 	greyscale_colors = CIRCUIT_COLOR_SERVICE
 	build_path = /obj/machinery/coffeemaker
 	req_components = list(

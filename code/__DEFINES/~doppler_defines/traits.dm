@@ -39,6 +39,10 @@
 #define TRAIT_HARD_SOLES "hard_soles"
 /// Can detach cybernetic limbs voluntarily
 #define TRAIT_ROBOTIC_LIMBATTACHMENT "robotic_limbattachment"
+/// This person has the same taste in food as a different species
+#define TRAIT_ATYPICAL_TASTER "atypical_taster"
+/// This person is space-acclimated and can "spacer-swim" on zero gravity turfs inside light atmosphere.
+#define TRAIT_SPACER_SWIM "spacer_swim"
 
 ////
 // Jobs
@@ -66,3 +70,9 @@
 ////
 /// Trait for muting only speech, but allowing emotes.
 #define TRAIT_SPEECH_ONLY_MUTE "speech_only_mute"
+
+////
+// Items
+////
+
+#define TRAIT_WORN_EXAMINE "worn_examine"

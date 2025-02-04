@@ -99,7 +99,7 @@
 		/obj/item/stack/medical/bandage = 2,
 		/obj/item/stack/sticky_tape/surgical = 2,
 		/obj/item/reagent_containers/blood/random = 1,
-		/obj/item/stack/medical/wound_recovery/robofoam = 2,
+		/obj/item/stack/medical/gauze/alu_splint = 2,
 		// Pill bottles
 		/obj/item/storage/pill_bottle/iron = 2,
 		/obj/item/storage/pill_bottle/potassiodide = 2,
@@ -136,11 +136,8 @@
 		/obj/item/stack/medical/bandage = 2,
 		/obj/item/stack/sticky_tape/surgical = 2,
 		/obj/item/stack/medical/poultice = 1,
-		/obj/item/stack/medical/wound_recovery = 1,
-		/obj/item/stack/medical/wound_recovery/rapid_coagulant = 1,
+		/obj/item/stack/medical/gauze/alu_splint = 2,
 		/obj/item/reagent_containers/blood/random = 2,
-		/obj/item/stack/medical/wound_recovery/robofoam = 3,
-		/obj/item/stack/medical/wound_recovery/robofoam_super = 2,
 		// Medigels
 		/obj/item/reagent_containers/medigel/libital = 2,
 		/obj/item/reagent_containers/medigel/aiuri = 2,
@@ -244,6 +241,7 @@
 	loot = list(
 		/obj/item/storage/medkit/civil_defense/stocked = 2,
 		/obj/item/storage/medkit/civil_defense/comfort/stocked = 2,
+		/obj/item/storage/medkit/civil_defense/the_big_cheese = 1,
 		/obj/item/storage/medkit/frontier/stocked = 2,
 		/obj/item/storage/medkit/combat_surgeon/stocked = 2,
 		/obj/item/storage/medkit/robotic_repair/stocked = 2,
@@ -421,9 +419,6 @@
 		// stuff
 		/obj/item/storage/epic_loot_cooler = 1,
 		/obj/item/storage/epic_loot_money_case = 1,
-		// Robofoam is a tool, right?
-		/obj/item/stack/medical/wound_recovery/robofoam = 2,
-		/obj/item/stack/medical/wound_recovery/robofoam_super = 1,
 	)
 
 // Random construction stuff
@@ -473,7 +468,6 @@
 		/obj/item/flatpacked_machine/wind_turbine = 2,
 		/obj/item/folded_navigation_gigabeacon = 1,
 		/obj/item/wallframe/cell_charger_multi = 2,
-		/obj/item/wallframe/frontier_medstation = 1,
 		/obj/item/wallframe/wall_heater = 2,
 		/obj/item/wallframe/digital_clock = 1,
 		// Other things

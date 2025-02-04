@@ -17,11 +17,12 @@
 	var/reagent_flags = PROCESS_ORGANIC
 	///This is the outfit which will be used by the species its preview portrait
 	var/datum/outfit/preview_outfit = /datum/outfit/job/assistant/consistent
-
+	///Override for the alpha of bodyparts and mutant parts.
+	var/specific_alpha = 255
 
 /// Cybernetic limbs logic here!
 //	Used for most races
-/datum/species/on_species_gain(mob/living/carbon/human/target, datum/species/old_species, pref_load)
+/datum/species/on_species_gain(mob/living/carbon/human/target, datum/species/old_species, pref_load, regenerate_icons = TRUE)
 	var/list/frame_bodyparts = target.dna.features["frame_list"]
 	if(type in GLOB.species_blacklist_no_humanoid)
 		return ..()

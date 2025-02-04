@@ -115,9 +115,8 @@
 				new /obj/machinery/light/floor(chosen)
 				continue
 			var/stick_type = pick(glowsticks)
-			var/obj/item/flashlight/glowstick/stick = new stick_type(chosen)
+			var/obj/item/flashlight/glowstick/stick = new stick_type(chosen, rand(10, 45))
 			///we want a wider range, otherwise they'd all burn out in about 20 minutes.
-			stick.max_fuel = stick.fuel = rand(10 MINUTES, 45 MINUTES)
 			stick.turn_on()
 
 /datum/station_trait/strong_supply_lines
@@ -294,6 +293,8 @@
 		/datum/job/shaft_miner = /obj/item/organ/monster_core/rush_gland,
 		/datum/job/station_engineer = /obj/item/organ/cyberimp/arm/toolset,
 		/datum/job/warden = /obj/item/organ/cyberimp/eyes/hud/security,
+		// DOPPLER EDIT BEGIN
+		/datum/job/bridge_assistant = /obj/item/organ/cyberimp/arm/paperwork,
 		/datum/job/gakster = /obj/item/organ/cyberimp/sensory_enhancer,
 		/datum/job/filtre = /obj/item/organ/cyberimp/sensory_enhancer,
 		/datum/job/pinata = /obj/item/organ/cyberimp/sensory_enhancer

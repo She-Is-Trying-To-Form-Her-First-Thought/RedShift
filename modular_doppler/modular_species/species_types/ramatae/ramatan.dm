@@ -35,6 +35,7 @@
 	)
 	payday_modifier = 1.0
 	mutanttongue = /obj/item/organ/tongue/ramatan
+	mutanteyes = /obj/item/organ/eyes/ramatan
 	changesource_flags = MIRROR_BADMIN | WABBAJACK | MIRROR_PRIDE | MIRROR_MAGIC | RACE_SWAP | ERT_SPAWN | SLIME_EXTRACT
 	death_sound = 'modular_doppler/modular_species/species_types/ramatae/sounds/scugdeath.ogg'
 	species_language_holder = /datum/language_holder/ramatan
@@ -84,7 +85,7 @@
 	head = /obj/item/clothing/head/beret/doppler_command/science
 	neck = /obj/item/clothing/neck/doppler_mantle/science
 
-/datum/species/ramatan/on_species_gain(mob/living/carbon/human/new_ramatan, datum/species/old_species, pref_load)
+/datum/species/ramatan/on_species_gain(mob/living/carbon/human/new_ramatan, datum/species/old_species, pref_load, regenerate_icons)
 	. = ..()
 	new_ramatan.AddComponent(/datum/component/sign_language)
 

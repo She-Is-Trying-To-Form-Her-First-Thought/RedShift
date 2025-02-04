@@ -168,7 +168,7 @@
 	trigger_mob = FALSE
 	trigger_item = TRUE
 	specific_item = /obj/structure/holobox
-	removable_signaller = FALSE //Being a pressure plate subtype, this can also use signals.
+	removable_assembly = FALSE //Being a pressure plate subtype, this can also use signals.
 	roundstart_signaller_freq = FREQ_HOLOGRID_SOLUTION //Frequency is kept on its own default channel however.
 	active = TRUE
 	trigger_delay = 10
@@ -454,9 +454,10 @@ MAPPING_DIRECTIONAL_HELPERS(/obj/machinery/puzzle/password, 32)
 			"green",
 			"blue",
 			"yellow",
-			"orange",
-			"brown",
+			COLOR_ORANGE, // orange is also not valid
+			COLOR_BROWN, // brown is NOT a valid byond color
 			"gray",
+			"purple",
 		)
 	for(var/digit in 0 to 9)
 		digit_to_color["[digit]"] = pick_n_take(possible_colors)
