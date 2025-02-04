@@ -64,7 +64,6 @@
 	var/static/list/selectable_gun_types = list(
 		"Surgical Equipment" = /obj/item/storage/backpack/duffelbag/deforest_surgical/stocked,
 		"Defibrilator" = /obj/item/defibrillator/loaded,
-		"Advanced Medical Satchel" = /obj/item/storage/backpack/duffelbag/deforest_medkit/stocked/super,
 	)
 	return selectable_gun_types
 
