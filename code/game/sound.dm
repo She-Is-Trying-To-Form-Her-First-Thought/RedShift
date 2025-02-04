@@ -795,7 +795,6 @@
 				'modular_lethal_doppler/paxilweapons_real/sound/impacts/super/super_impact_1.ogg',
 				'modular_lethal_doppler/paxilweapons_real/sound/impacts/super/super_impact_2.ogg',
 				'modular_lethal_doppler/paxilweapons_real/sound/impacts/super/super_impact_3.ogg',
-				'modular_lethal_doppler/paxilweapons_real/sound/impacts/super/super_impact_4.ogg',
 				'modular_lethal_doppler/paxilweapons_real/sound/impacts/super/super_impact_5.ogg',
 				'modular_lethal_doppler/paxilweapons_real/sound/impacts/super/super_impact_6.ogg',
 			)
